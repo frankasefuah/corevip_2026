@@ -874,37 +874,37 @@ const galleryItems = [
     id: 1,
     title: "Nairobi Conference Welcome",
     category: "Ceremony",
-    image: svgPhoto("Nairobi Welcome", ["#2563eb", "#22d3ee"]),
+    image: "assets/images/exhibition.jpg",
   },
   {
     id: 2,
     title: "AAU Diamond Jubilee",
     category: "Milestone",
-    image: svgPhoto("AAU Diamond Jubilee", ["#0f172a", "#2563eb"]),
+    image: "assets/images/audience (3).jpg",
   },
   {
     id: 3,
     title: "Innovation Expo",
     category: "Expo",
-    image: svgPhoto("Innovation Expo", ["#1d4ed8", "#38bdf8"]),
+    image: "assets/images/audience (4).jpg",
   },
   {
     id: 4,
     title: "Academic Tracks",
     category: "Sessions",
-    image: svgPhoto("Academic Tracks", ["#0f766e", "#60a5fa"]),
+    image: "assets/images/panel (2).jpg",
   },
   {
     id: 5,
     title: "Leadership Dialogue",
     category: "Dialogue",
-    image: svgPhoto("Leadership Dialogue", ["#111827", "#3b82f6"]),
+    image: "assets/images/panel.jpg",
   },
   {
     id: 6,
     title: "Gala & Awards",
     category: "Gala",
-    image: svgPhoto("Gala & Awards", ["#134e4a", "#22d3ee"]),
+    image: "assets/images/awards.jpg",
   },
 ];
 
