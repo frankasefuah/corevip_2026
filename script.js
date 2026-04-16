@@ -1,6 +1,6 @@
 /*
   ========================================================================
-  COREVIP 2027 WEBSITE SCRIPT
+  CoREViP 2027 WEBSITE SCRIPT
   ========================================================================
   HOW TO EDIT THIS FILE
   ------------------------------------------------------------------------
@@ -26,7 +26,7 @@
 const EVENT_DATE = new Date("2027-07-20T08:00:00");
 
 const EVENT_CONTENT = {
-  code: "COREVIP 2027",
+  code: "CoREViP 2027",
   title:
     "Conference of Rectors, Vice-Chancellors and Presidents of African Universities",
   host: "Association of African Universities",
@@ -91,10 +91,10 @@ const i18n = {
       eyebrow1: "AAU Diamond Jubilee Conference",
       eyebrow2:
         "Celebrating 60 years of continental higher education leadership",
-      title1: "COREVIP 2027",
+      title1: "CoREViP 2027",
       title2:
         'A Future-Facing <span class="gradient-text">African University</span>',
-      text1: `${EVENT_CONTENT.host} and ${EVENT_CONTENT.cohost} invite university leaders and stakeholders to Nairobi for a landmark edition of COREVIP under the theme “${EVENT_CONTENT.theme}.”`,
+      text1: `${EVENT_CONTENT.host} and ${EVENT_CONTENT.cohost} invite university leaders and stakeholders to Nairobi for a landmark edition of CoREViP under the theme “${EVENT_CONTENT.theme}.”`,
       text2: `A premium conference website concept built around ${EVENT_CONTENT.milestone}, policy dialogue, academic exchange, and innovation showcases.`,
       button1: "Explore Event",
       button2: "View Program",
@@ -120,7 +120,7 @@ const i18n = {
     },
     countdown: {
       eyebrow: "Countdown to conference opening",
-      title: "COREVIP 2027 begins soon",
+      title: "CoREViP 2027 begins soon",
       text: `Live countdown to the opening of ${EVENT_CONTENT.code}.`,
       days: "Days",
       hours: "Hours",
@@ -129,7 +129,7 @@ const i18n = {
     },
     about: {
       title1:
-        "A landmark edition of COREVIP for Africa’s higher education future",
+        "A landmark edition of CoREViP for Africa’s higher education future",
       text1: `${EVENT_CONTENT.code} marks the 60th anniversary of the Association of African Universities while advancing a forward-looking agenda on resilience, relevance, and impact.`,
       title2: "A premium digital experience for a prestigious milestone",
       text2:
@@ -210,7 +210,7 @@ const i18n = {
       eyebrow: "Registration",
       title: "Registration and participation",
       text: "Use this section for your real registration link, attendance instructions, and submission portal.",
-      cardTitle: "Register for COREVIP 2027",
+      cardTitle: "Register for CoREViP 2027",
       cardText:
         "Secure your participation in the AAU Diamond Jubilee conference. Add your real registration portal when ready.",
       button: "Open registration placeholder",
@@ -285,10 +285,10 @@ const i18n = {
       eyebrow1: "Conférence du jubilé de diamant de l’AAU",
       eyebrow2:
         "Célébrer 60 ans de leadership continental en enseignement supérieur",
-      title1: "COREVIP 2027",
+      title1: "CoREViP 2027",
       title2:
         'Une université africaine <span class="gradient-text">tournée vers l’avenir</span>',
-      text1: `${EVENT_CONTENT.host} et ${EVENT_CONTENT.cohost} invitent les dirigeants universitaires et les parties prenantes à Nairobi pour une édition historique du COREVIP sous le thème « ${EVENT_CONTENT.theme} ».`,
+      text1: `${EVENT_CONTENT.host} et ${EVENT_CONTENT.cohost} invitent les dirigeants universitaires et les parties prenantes à Nairobi pour une édition historique du CoREViP sous le thème « ${EVENT_CONTENT.theme} ».`,
       text2: `Un concept de site haut de gamme centré sur le ${EVENT_CONTENT.milestone}, le dialogue politique, les échanges académiques et les vitrines d’innovation.`,
       button1: "Découvrir",
       button2: "Voir le programme",
@@ -314,7 +314,7 @@ const i18n = {
     },
     countdown: {
       eyebrow: "Compte à rebours avant l’ouverture",
-      title: "COREVIP 2027 commence bientôt",
+      title: "CoREViP 2027 commence bientôt",
       text: `Compte à rebours en direct avant l’ouverture de ${EVENT_CONTENT.code}.`,
       days: "Jours",
       hours: "Heures",
@@ -323,7 +323,7 @@ const i18n = {
     },
     about: {
       title1:
-        "Une édition marquante du COREVIP pour l’avenir de l’enseignement supérieur africain",
+        "Une édition marquante du CoREViP pour l’avenir de l’enseignement supérieur africain",
       text1: `${EVENT_CONTENT.code} marque le 60e anniversaire de l’Association des Universités Africaines tout en faisant avancer un programme tourné vers la résilience, la pertinence et l’impact.`,
       title2: "Une expérience numérique premium pour une étape prestigieuse",
       text2:
@@ -405,7 +405,7 @@ const i18n = {
       eyebrow: "Inscription",
       title: "Inscription et participation",
       text: "Utilisez cette section pour votre lien d’inscription réel, les instructions de participation et le portail de soumission.",
-      cardTitle: "Inscription à COREVIP 2027",
+      cardTitle: "Inscription à CoREViP 2027",
       cardText:
         "Réservez votre participation à la conférence du jubilé de diamant de l’AAU. Ajoutez votre véritable portail lorsque prêt.",
       button: "Ouvrir l’inscription (espace réservé)",
@@ -479,10 +479,10 @@ const i18n = {
     hero: {
       eyebrow1: "مؤتمر اليوبيل الماسي لاتحاد الجامعات الأفريقية",
       eyebrow2: "الاحتفاء بستين عامًا من القيادة القارية في التعليم العالي",
-      title1: "COREVIP 2027",
+      title1: "CoREViP 2027",
       title2:
         'جامعة أفريقية <span class="gradient-text">مستعدة للمستقبل</span>',
-      text1: `يدعو ${EVENT_CONTENT.host} و${EVENT_CONTENT.cohost} قادة الجامعات وأصحاب المصلحة إلى نيروبي لحضور نسخة تاريخية من COREVIP تحت شعار «${EVENT_CONTENT.theme}».`,
+      text1: `يدعو ${EVENT_CONTENT.host} و${EVENT_CONTENT.cohost} قادة الجامعات وأصحاب المصلحة إلى نيروبي لحضور نسخة تاريخية من CoREViP تحت شعار «${EVENT_CONTENT.theme}».`,
       text2: `تصور لموقع مؤتمر فاخر يتمحور حول ${EVENT_CONTENT.milestone} والحوار السياساتي والتبادل الأكاديمي وعروض الابتكار.`,
       button1: "استكشاف الحدث",
       button2: "عرض البرنامج",
@@ -507,7 +507,7 @@ const i18n = {
     },
     countdown: {
       eyebrow: "العد التنازلي لافتتاح المؤتمر",
-      title: "COREVIP 2027 يقترب",
+      title: "CoREViP 2027 يقترب",
       text: `عد تنازلي مباشر لافتتاح ${EVENT_CONTENT.code}.`,
       days: "أيام",
       hours: "ساعات",
@@ -515,7 +515,7 @@ const i18n = {
       seconds: "ثوانٍ",
     },
     about: {
-      title1: "نسخة محورية من COREVIP لمستقبل التعليم العالي في أفريقيا",
+      title1: "نسخة محورية من CoREViP لمستقبل التعليم العالي في أفريقيا",
       text1: `${EVENT_CONTENT.code} يحتفي بالذكرى الستين لاتحاد الجامعات الأفريقية مع دفع أجندة مستقبلية قائمة على المرونة والملاءمة والأثر.`,
       title2: "تجربة رقمية مميزة لمحطة رفيعة المستوى",
       text2:
@@ -594,7 +594,7 @@ const i18n = {
       eyebrow: "التسجيل",
       title: "التسجيل والمشاركة",
       text: "استخدم هذا القسم لرابط التسجيل الحقيقي وتعليمات الحضور وبوابة التقديم.",
-      cardTitle: "سجل في COREVIP 2027",
+      cardTitle: "سجل في CoREViP 2027",
       cardText:
         "احجز مشاركتك في مؤتمر اليوبيل الماسي لـ AAU. أضف بوابة التسجيل الحقيقية عندما تكون جاهزة.",
       button: "فتح رابط التسجيل البديل",
@@ -669,10 +669,10 @@ const i18n = {
       eyebrow1: "Conferência do jubileu de diamante da AAU",
       eyebrow2:
         "Celebrando 60 anos de liderança continental no ensino superior",
-      title1: "COREVIP 2027",
+      title1: "CoREViP 2027",
       title2:
         'Uma universidade africana <span class="gradient-text">voltada para o futuro</span>',
-      text1: `${EVENT_CONTENT.host} e ${EVENT_CONTENT.cohost} convidam líderes universitários e partes interessadas para Nairobi numa edição histórica do COREVIP sob o tema “${EVENT_CONTENT.theme}”.`,
+      text1: `${EVENT_CONTENT.host} e ${EVENT_CONTENT.cohost} convidam líderes universitários e partes interessadas para Nairobi numa edição histórica do CoREViP sob o tema “${EVENT_CONTENT.theme}”.`,
       text2: `Um conceito de website premium centrado no ${EVENT_CONTENT.milestone}, no diálogo político, no intercâmbio académico e nas montras de inovação.`,
       button1: "Explorar evento",
       button2: "Ver programa",
@@ -698,7 +698,7 @@ const i18n = {
     },
     countdown: {
       eyebrow: "Contagem decrescente para a abertura",
-      title: "O COREVIP 2027 está a chegar",
+      title: "O CoREViP 2027 está a chegar",
       text: `Contagem decrescente em direto para a abertura do ${EVENT_CONTENT.code}.`,
       days: "Dias",
       hours: "Horas",
@@ -707,7 +707,7 @@ const i18n = {
     },
     about: {
       title1:
-        "Uma edição marcante do COREVIP para o futuro do ensino superior africano",
+        "Uma edição marcante do CoREViP para o futuro do ensino superior africano",
       text1: `${EVENT_CONTENT.code} assinala o 60.º aniversário da Association of African Universities ao mesmo tempo que promove uma agenda voltada para resiliência, relevância e impacto.`,
       title2: "Uma experiência digital premium para um marco prestigiado",
       text2:
@@ -791,7 +791,7 @@ const i18n = {
       eyebrow: "Registo",
       title: "Registo e participação",
       text: "Use esta secção para o seu link real de registo, instruções de participação e portal de submissão.",
-      cardTitle: "Registe-se para o COREVIP 2027",
+      cardTitle: "Registe-se para o CoREViP 2027",
       cardText:
         "Garanta a sua participação na conferência do jubileu de diamante da AAU. Adicione o seu portal real quando estiver pronto.",
       button: "Abrir marcador de registo",
@@ -940,37 +940,37 @@ const galleryItems = [
     id: 1,
     title: "Nairobi Conference Welcome",
     category: "Ceremony",
-    image: "assets/images/gallery/nairobi-welcome.jpg",
+    image: "assets/images/stage.jpg",
   },
   {
     id: 2,
     title: "AAU Diamond Jubilee",
     category: "Milestone",
-    image: "assets/images/gallery/diamond-jubilee.jpg",
+    image: "assets/images/awards.jpg",
   },
   {
     id: 3,
     title: "Innovation Expo",
     category: "Expo",
-    image: "assets/images/gallery/innovation-expo.jpg",
+    image: "assets/images/exhibition.jpg",
   },
   {
     id: 4,
     title: "Academic Tracks",
     category: "Sessions",
-    image: "assets/images/gallery/academic-tracks.jpg",
+    image: "assets/images/comments.jpg",
   },
   {
     id: 5,
     title: "Leadership Dialogue",
     category: "Dialogue",
-    image: "assets/images/gallery/leadership-dialogue.jpg",
+    image: "assets/images/panel.jpg",
   },
   {
     id: 6,
     title: "Gala & Awards",
     category: "Gala",
-    image: "assets/images/gallery/gala-awards.jpg",
+    image: "assets/images/discussion.jpg",
   },
 ];
 
@@ -984,7 +984,7 @@ const galleryItems = [
 */
 const videos = [
   {
-    title: "COREVIP 2027 Teaser",
+    title: "CoREViP 2027 Teaser",
     duration: "02:14",
     embed: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0",
     thumb: "assets/images/videos/corevip-teaser.jpg",
@@ -1006,9 +1006,9 @@ const videos = [
 const testimonials = [
   {
     quote:
-      "COREVIP continues to offer a critical platform for shaping policy, collaboration, and innovation across African higher education.",
+      "CoREViP continues to offer a critical platform for shaping policy, collaboration, and innovation across African higher education.",
     name: "Institutional Delegate",
-    title: "Past COREVIP Participant",
+    title: "Past CoREViP Participant",
   },
   {
     quote:
@@ -1018,7 +1018,7 @@ const testimonials = [
   },
   {
     quote:
-      "The Diamond Jubilee framing gives COREVIP 2027 both celebratory significance and a strong forward-looking agenda.",
+      "The Diamond Jubilee framing gives CoREViP 2027 both celebratory significance and a strong forward-looking agenda.",
     name: "Higher Education Researcher",
     title: "Conference Contributor",
   },
@@ -1172,7 +1172,7 @@ const ticketTiers = [
 const blogPosts = [
   {
     title: "Conference Theme and Subthemes",
-    excerpt: `Explore the conference theme “${EVENT_CONTENT.theme}” and the subthemes that shape COREVIP 2027.`,
+    excerpt: `Explore the conference theme “${EVENT_CONTENT.theme}” and the subthemes that shape CoREViP 2027.`,
     tag: "Theme",
     date: "2027",
     url: "#",
@@ -1196,10 +1196,10 @@ const blogPosts = [
 const faqs = [
   {
     q: {
-      en: "Who should attend COREVIP 2027?",
-      fr: "Qui devrait participer au COREVIP 2027 ?",
-      ar: "من الذي ينبغي أن يحضر COREVIP 2027؟",
-      pt: "Quem deve participar no COREVIP 2027?",
+      en: "Who should attend CoREViP 2027?",
+      fr: "Qui devrait participer au CoREViP 2027 ?",
+      ar: "من الذي ينبغي أن يحضر CoREViP 2027؟",
+      pt: "Quem deve participar no CoREViP 2027?",
     },
     a: {
       en: "University leaders, policymakers, researchers, students, quality assurance agencies, industry partners, and development agencies are all encouraged to participate.",
@@ -1765,9 +1765,9 @@ const schedule = [
           pt: "Cerimónia de encerramento",
         },
         desc: {
-          en: "Reflections from vice-chancellors, remarks from AAU leadership, and announcement of the next COREVIP host.",
+          en: "Reflections from vice-chancellors, remarks from AAU leadership, and announcement of the next CoREViP host.",
           fr: "Réflexions des vice-chanceliers, remarques de la direction de l’AAU et annonce du prochain hôte.",
-          ar: "تأملات قادة الجامعات وملاحظات قيادة AAU والإعلان عن مضيف COREVIP القادم.",
+          ar: "تأملات قادة الجامعات وملاحظات قيادة AAU والإعلان عن مضيف CoREViP القادم.",
           pt: "Reflexões dos vice-reitores, observações da liderança da AAU e anúncio do próximo anfitrião.",
         },
       },
@@ -1935,7 +1935,7 @@ function renderHero() {
   const variant = state.variants.hero;
   if (variant === "hide") return renderSection(ids.hero, "", true);
   const copy = t("hero");
-  const heroImg = "assets/images/hero.jpg"; // PLACE YOUR IMAGE HERE
+  const heroImg = "assets/images/audience.jpg"; // PLACE YOUR IMAGE HERE
 
   const html =
     variant === "v2"
@@ -1957,7 +1957,7 @@ function renderHero() {
           </div>
         </div>
         <div class="hero-showcase reveal">
-          <div class="hero-image media-fallback" data-fallback="${svgPhoto("COREVIP 2027", ["#0f172a", "#2563eb"])}" style="background-image:url('${heroImg}')"></div>
+          <div class="hero-image media-fallback" data-fallback="${svgPhoto("CoREViP 2027", ["#0f172a", "#2563eb"])}" style="background-image:url('${heroImg}')"></div>
           <div class="hero-caption">
             <div class="pill"><span class="icon-dot"></span>${EVENT_CONTENT.milestone}</div>
             <h3 style="margin: 16px 0 8px; font-size: 2rem;">${copy.cardTitle}</h3>
@@ -2559,7 +2559,7 @@ function renderTickets() {
 }
 
 /* ========================================================================
-   CONTACT SECTION (beneath tickets as requested)
+   CONTACT SECTION 
    ======================================================================== */
 function renderContact() {
   const copy = t("contact");
@@ -2583,8 +2583,8 @@ function renderContact() {
             <h3 style="margin-top:0;">Partnership enquiries</h3>
             <p>Use the buttons below for quick outreach related to exhibition opportunities and sponsorship conversations.</p>
             <div class="contact-actions">
-              <a class="button button-primary" href="mailto:${EVENT_CONTENT.exhibitionEmail}?subject=COREVIP%202027%20Exhibition%20Enquiry">${copy.exhibition}</a>
-              <a class="button-secondary" href="mailto:${EVENT_CONTENT.sponsorshipEmail}?subject=COREVIP%202027%20Sponsorship%20Enquiry">${copy.sponsorship}</a>
+              <a class="button button-primary" href="mailto:${EVENT_CONTENT.exhibitionEmail}?subject=CoREViP%202027%20Exhibition%20Enquiry">${copy.exhibition}</a>
+              <a class="button-secondary" href="mailto:${EVENT_CONTENT.sponsorshipEmail}?subject=CoREViP%202027%20Sponsorship%20Enquiry">${copy.sponsorship}</a>
             </div>
           </article>
         </div>
@@ -2918,7 +2918,7 @@ function svgPhoto(title, colors = ["#2563eb", "#22d3ee"]) {
       </g>
       <rect x="86" y="86" width="1428" height="828" rx="42" fill="none" stroke="rgba(255,255,255,0.24)" stroke-width="2"/>
       <text x="110" y="820" fill="white" opacity="0.96" font-family="Inter,Arial,sans-serif" font-size="92" font-weight="800">${escapeXml(title)}</text>
-      <text x="112" y="892" fill="rgba(255,255,255,0.72)" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="600" letter-spacing="8">COREVIP 2027</text>
+      <text x="112" y="892" fill="rgba(255,255,255,0.72)" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="600" letter-spacing="8">CoREViP 2027</text>
     </svg>`;
   return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
 }
