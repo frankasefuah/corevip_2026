@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="COREVIP 2027 Diamond Anniversary event website with multilingual support and modular section variants." />
+  <meta name="description" content="COREVIP 2027 multilingual event website with venue map, registration, FAQ, and contact sections." />
   <title>COREVIP 2027 | AAU Diamond Jubilee</title>
 
   <!--
-    ==============================================
-    HEAD NOTES
-    ==============================================
-    - Update the page title above if needed.
+    ======================================================
+    HEAD / GLOBAL NOTES
+    ======================================================
+    - Change the page title above if needed.
     - Update the meta description above for SEO.
-    - If you want to use a different font, replace the Google Fonts link below.
+    - If you want a different font, replace the Google Fonts link below.
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,16 +20,16 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Accessibility: skip link for keyboard users -->
+  <!-- Accessibility helper for keyboard navigation -->
   <a class="skip-link" href="#main">Skip to content</a>
 
   <!--
-    ==============================================
+    ======================================================
     SITE HEADER
-    ==============================================
-    - Change the brand text below if you want a different event title.
-    - Add or remove nav links below in the <nav> element.
-    - Language selector is injected by JavaScript into #languageSwitcher.
+    ======================================================
+    - Update the brand text below if you want a different event title.
+    - Language selector is rendered by JavaScript inside #languageSwitcher.
+    - Update navigation links if you rename section IDs.
   -->
   <header class="site-header" id="top">
     <div class="container header-inner">
@@ -42,48 +42,34 @@
       </a>
 
       <nav class="site-nav" aria-label="Primary navigation">
-        <!-- Update these anchor links if you rename section IDs -->
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#program" data-i18n="nav.program">Program</a>
-        <a href="#speakers" data-i18n="nav.speakers">Speakers</a>
-        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
-        <a href="#tickets" data-i18n="nav.tickets">Tickets</a>
+        <a href="#gallery" data-i18n="nav.gallery">Venue & Gallery</a>
+        <a href="#registration" data-i18n="nav.registration">Registration</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
 
       <div class="header-actions">
-        <!-- JavaScript adds language selector here -->
         <div id="languageSwitcher" class="language-switcher"></div>
-        <a class="button button-primary header-cta" href="#tickets" data-i18n="nav.cta">Book Tickets</a>
+        <a class="button button-primary header-cta" href="#registration" data-i18n="nav.cta">Register</a>
       </div>
     </div>
   </header>
 
   <!--
-    ==============================================
-    VARIANT CUSTOMIZER BAR
-    ==============================================
-    - This lets you toggle each section between V1 / V2 / Off.
-    - Controls are rendered by JavaScript into #variantControls.
+    ======================================================
+    CUSTOMIZER REMOVED FROM VIEW
+    ======================================================
+    - As requested, the customizer/section chooser is no longer shown.
+    - Final section choices are controlled inside script.js using the fixed state object.
   -->
-  <div class="variant-bar-wrap">
-    <div class="container">
-      <section class="variant-bar" aria-labelledby="variant-heading">
-        <div class="variant-bar-heading">
-          <p class="eyebrow" data-i18n="customizer.eyebrow">Customizer</p>
-          <h2 id="variant-heading" data-i18n="customizer.title">Choose a version for every section</h2>
-          <p data-i18n="customizer.text">Switch between V1, V2, or Off for each section without touching the code.</p>
-        </div>
-        <div id="variantControls" class="variant-controls" aria-live="polite"></div>
-      </section>
-    </div>
-  </div>
 
   <!--
-    ==============================================
-    MAIN CONTENT PLACEHOLDERS
-    ==============================================
-    - JavaScript renders all sections into these containers.
-    - If you remove a section completely, also remove its ID here and in script.js.
+    ======================================================
+    MAIN CONTENT RENDER TARGETS
+    ======================================================
+    - JavaScript renders each section into these containers.
+    - If you remove a section completely, remove its ID here and the render call in script.js.
   -->
   <main id="main">
     <div id="heroSection"></div>
@@ -98,15 +84,18 @@
     <div id="partnersSection"></div>
     <div id="exhibitorsSection"></div>
     <div id="hotelsSection"></div>
+    <div id="registrationSection"></div>
     <div id="ticketsSection"></div>
+    <div id="contactSection"></div>
+    <div id="faqSection"></div>
     <div id="blogSection"></div>
   </main>
 
   <!--
-    ==============================================
+    ======================================================
     FOOTER
-    ==============================================
-    - Update footer text below if needed.
+    ======================================================
+    - Update footer text or links below if needed.
   -->
   <footer class="site-footer">
     <div class="container footer-inner">
@@ -117,17 +106,17 @@
       <div class="footer-links">
         <a href="#about" data-i18n="nav.about">About</a>
         <a href="#program" data-i18n="nav.program">Program</a>
-        <a href="#tickets" data-i18n="nav.tickets">Tickets</a>
+        <a href="#registration" data-i18n="nav.registration">Registration</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </div>
     </div>
   </footer>
 
   <!--
-    ==============================================
-    LIGHTBOX
-    ==============================================
-    - Used by the gallery section.
-    - JavaScript updates the image source and caption here.
+    ======================================================
+    LIGHTBOX FOR GALLERY IMAGES
+    ======================================================
+    - JavaScript updates the image and caption here.
   -->
   <div id="lightbox" class="lightbox" hidden>
     <button class="lightbox-close" id="lightboxClose" aria-label="Close image preview">×</button>
@@ -138,17 +127,13 @@
   </div>
 
   <!--
-    ==============================================
-    BACK TO TOP BUTTON
-    ==============================================
-    - Icon-only button as requested.
-    - You can replace the arrow character with an SVG icon if preferred.
+    ======================================================
+    BACK TO TOP BUTTON (ICON ONLY)
+    ======================================================
+    - Replace the arrow character below with an SVG icon if you prefer.
   -->
-  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">
-    ↑
-  </button>
+  <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">↑</button>
 
-  <!-- Main website logic -->
   <script src="script.js" defer></script>
 </body>
 </html>

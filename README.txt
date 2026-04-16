@@ -1,66 +1,88 @@
-COREVIP 2027 WEBSITE PACKAGE
-=================================
+COREVIP 2027 UPDATED WEBSITE PACKAGE
+====================================
 
-This updated ZIP contains:
+This ZIP contains:
 - index.html
 - styles.css
 - script.js
 - README.txt
+- assets/images/README_IMAGES.txt
 
-WHAT WAS ADDED
---------------
-1. Multilingual language selector:
+WHAT WAS ADDED / UPDATED
+------------------------
+1. FAQ section added.
+2. Hotels section now supports a slider layout.
+   IMPORTANT: In this updated build, hotels V1 = slider, V2 = grid list.
+3. Contact section added beneath the tickets area.
+4. Registration section added.
+5. Venue map merged into the Gallery section using Google Maps.
+6. Customizer removed from view.
+7. Fixed state choices applied from your message.
+8. Email for exhibition and sponsorship set to:
+   corevip2026@aau.org
+9. Translation support kept for:
    - English
    - French
-   - Arabic (RTL supported)
+   - Arabic (RTL)
    - Portuguese
 
-2. Back-to-top icon button:
-   - Floating round button with an upward arrow
-   - Replaces the previous text-based link
+HOW TO ADD IMAGES FROM assets/images
+------------------------------------
+Use file paths from the project root like these examples:
 
-3. File comments throughout:
-   - Clear comment blocks show where to edit content
-   - Comments indicate where to place:
-     * images
-     * links
-     * videos
-     * speakers
-     * hotel booking URLs
-     * blog/update links
-     * event details
-     * translations
+1. Hero image example:
+   assets/images/hero.jpg
 
-4. Content updates from uploaded documents:
-   - Event title, dates, venue, theme, and milestone are based on the Concept Note
-   - Program section is populated from the Draft Programme Structure
+2. Gallery image example:
+   assets/images/gallery/venue-hall.jpg
 
-EDITING GUIDE
+3. Speaker image example:
+   assets/images/speakers/chairperson.jpg
+
+4. Video thumbnail example:
+   assets/images/videos/corevip-teaser.jpg
+
+WHERE TO EDIT IMAGE PATHS
+-------------------------
+Open script.js and search for:
+- PLACE YOUR IMAGE HERE
+
+You will see examples like:
+heroImg = 'assets/images/hero.jpg'
+
+and items like:
+image: 'assets/images/gallery/nairobi-welcome.jpg'
+
+If your real image exists there, the website will show it.
+If the file is missing, the site automatically falls back to a generated placeholder image.
+
+WHERE TO EDIT EMAIL / PHONE / REGISTRATION / MAP
+------------------------------------------------
+Open script.js and search for:
+const EVENT_CONTENT = {
+
+Edit these values:
+- contactEmail
+- exhibitionEmail
+- sponsorshipEmail
+- phone
+- registrationLink
+- mapQuery
+
+GOOGLE MAPS
+-----------
+The map inside the Venue & Gallery section uses this query:
+KCA University Nairobi Kenya
+
+To change the location, update EVENT_CONTENT.mapQuery in script.js.
+
+HOTELS SLIDER
 -------------
-A. Change event details
-   - Open script.js
-   - Search for: EVENT_CONTENT
+Your chosen state kept hotels: 'v1'.
+In this build, v1 is the slider version so the default display is now a slider, exactly as requested.
 
-B. Change translations
-   - Open script.js
-   - Search for: const i18n
-
-C. Replace placeholder images with real files
-   - Open script.js
-   - Search for: PLACE YOUR IMAGE HERE
-   - Replace generated SVG image values with your real file paths
-   Example:
-     image: 'assets/images/hero.jpg'
-
-D. Replace demo links
-   - Open script.js
-   - Search for: PLACE YOUR LINK HERE
-
-E. Add local image assets
-   Suggested folder structure:
-   /assets/images/
-   /assets/videos/
-
-F. Open the site
-   - Double-click index.html
-   OR upload the files to Netlify, Vercel, cPanel, GitHub Pages, etc.
+OPEN THE SITE
+-------------
+1. Unzip the package.
+2. Open index.html in your browser.
+3. Or upload the files to Netlify, GitHub Pages, Vercel, cPanel, or your server.
