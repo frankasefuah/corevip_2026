@@ -61,9 +61,11 @@ const i18n = {
     nav: {
       about: "About",
       program: "Program",
+      speakers: "Speakers",
       gallery: "Venue & Gallery",
       registration: "Registration",
       contact: "Contact",
+      hotels: "Hotels",
       cta: "Register",
     },
     footer: {
