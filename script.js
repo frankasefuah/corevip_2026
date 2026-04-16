@@ -257,7 +257,9 @@ const i18n = {
     nav: {
       about: "À propos",
       program: "Programme",
+      speakers: "Intervenants",
       gallery: "Lieu & galerie",
+      hotels: "Hôtels",
       registration: "Inscription",
       contact: "Contact",
       cta: "S’inscrire",
@@ -452,7 +454,9 @@ const i18n = {
     nav: {
       about: "حول المؤتمر",
       program: "البرنامج",
+      speakers: "المتحدثون",
       gallery: "المكان والمعرض",
+      hotels: "الفنادق",
       registration: "التسجيل",
       contact: "التواصل",
       cta: "سجل الآن",
@@ -641,8 +645,10 @@ const i18n = {
     nav: {
       about: "Sobre",
       program: "Programa",
+      speakers: "Oradores",
       gallery: "Local & galeria",
       registration: "Registo",
+      hotels: "Hotéis",
       contact: "Contacto",
       cta: "Registar",
     },
