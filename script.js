@@ -934,7 +934,7 @@ const videos = [
   {
     title: "Host City & Venue Preview",
     duration: "01:46",
-    embed: "https://youtu.be/ellVFlAp-x4?si=SRMDspSp0xls2FrC",
+    embed: "https://www.youtube.com/embed/ellVFlAp-x4?si=SRMDspSp0xls2FrC",
     thumb: svgPhoto("Host City & Venue Preview", ["#0f172a", "#06b6d4"]),
   },
 ];
