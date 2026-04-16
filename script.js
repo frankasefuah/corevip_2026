@@ -239,12 +239,51 @@ const speakers = [
   image: 'assets/images/gallery/venue-hall.jpg'
 */
 const galleryItems = [
+<<<<<<< HEAD
   { id: 1, title: 'Nairobi Conference Welcome', category: 'Ceremony', image: 'assets/images/gallery/nairobi-welcome.jpg' },
   { id: 2, title: 'AAU Diamond Jubilee', category: 'Milestone', image: 'assets/images/gallery/diamond-jubilee.jpg' },
   { id: 3, title: 'Innovation Expo', category: 'Expo', image: 'assets/images/gallery/innovation-expo.jpg' },
   { id: 4, title: 'Academic Tracks', category: 'Sessions', image: 'assets/images/gallery/academic-tracks.jpg' },
   { id: 5, title: 'Leadership Dialogue', category: 'Dialogue', image: 'assets/images/gallery/leadership-dialogue.jpg' },
   { id: 6, title: 'Gala & Awards', category: 'Gala', image: 'assets/images/gallery/gala-awards.jpg' },
+=======
+  {
+    id: 1,
+    title: "Nairobi Conference Welcome",
+    category: "Ceremony",
+    image: "assets/images/exhibition.jpg",
+  },
+  {
+    id: 2,
+    title: "AAU Diamond Jubilee",
+    category: "Milestone",
+    image: "assets/images/audience (3).jpg",
+  },
+  {
+    id: 3,
+    title: "Innovation Expo",
+    category: "Expo",
+    image: "assets/images/audience (4).jpg",
+  },
+  {
+    id: 4,
+    title: "Academic Tracks",
+    category: "Sessions",
+    image: "assets/images/panel (2).jpg",
+  },
+  {
+    id: 5,
+    title: "Leadership Dialogue",
+    category: "Dialogue",
+    image: "assets/images/panel.jpg",
+  },
+  {
+    id: 6,
+    title: "Gala & Awards",
+    category: "Gala",
+    image: "assets/images/awards.jpg",
+  },
+>>>>>>> ecbd9677daf6a02269724dc70ebc08bafed9bc5c
 ];
 
 /*
@@ -256,9 +295,30 @@ const galleryItems = [
   Replace thumb paths with real image files if needed.
 */
 const videos = [
+<<<<<<< HEAD
   { title: 'COREVIP 2027 Teaser', duration: '02:14', embed: 'https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0', thumb: 'assets/images/videos/corevip-teaser.jpg' },
   { title: 'AAU Diamond Jubilee Story', duration: '04:32', embed: 'https://www.youtube.com/embed/ScMzIvxBSi4?rel=0', thumb: 'assets/images/videos/diamond-jubilee-story.jpg' },
   { title: 'Host City & Venue Preview', duration: '01:46', embed: 'https://www.youtube.com/embed/tgbNymZ7vqY?rel=0', thumb: 'assets/images/videos/venue-preview.jpg' },
+=======
+  {
+    title: "CoReViP 2027 Teaser",
+    duration: "02:14",
+    embed: "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0",
+    thumb: svgPhoto("CoReViP 2027 Teaser", ["#2563eb", "#67e8f9"]),
+  },
+  {
+    title: "AAU Diamond Jubilee Story",
+    duration: "04:32",
+    embed: "https://www.youtube.com/embed/ScMzIvxBSi4?rel=0",
+    thumb: svgPhoto("AAU Diamond Jubilee Story", ["#1d4ed8", "#93c5fd"]),
+  },
+  {
+    title: "Host City & Venue Preview",
+    duration: "01:46",
+    embed: "https://www.youtube.com/embed/ellVFlAp-x4?si=SRMDspSp0xls2FrC",
+    thumb: svgPhoto("Host City & Venue Preview", ["#0f172a", "#06b6d4"]),
+  },
+>>>>>>> ecbd9677daf6a02269724dc70ebc08bafed9bc5c
 ];
 
 const testimonials = [
