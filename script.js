@@ -948,7 +948,7 @@ const galleryItems = [
     id: 1,
     title: "Nairobi Conference Welcome",
     category: "Ceremony",
-    image: "assets/images/stage.jpg",
+    image: "assets/images/audience.jpg",
   },
   {
     id: 2,
@@ -978,7 +978,7 @@ const galleryItems = [
     id: 6,
     title: "Gala & Awards",
     category: "Gala",
-    image: "assets/images/discussion.jpg",
+    image: "assets/images/awards.jpg",
   },
 ];
 
@@ -1006,7 +1006,7 @@ const videos = [
   {
     title: "Kenya | The Trip of a Lifetime",
     duration: "02:23",
-    embed: "https://youtu.be/ellVFlAp-x4?si=SRMDspSp0xls2FrC",
+    embed: "https://www.youtube.com/watch?v=ellVFlAp-x4",
     thumb: "assets/videos/kenya in 2 mins.jpg",
   },
 ];
@@ -2327,7 +2327,7 @@ function renderVideos() {
         <div class="video-layout ${variant}">
           <div class="video-player reveal">
             <div class="video-stage">
-              ${state.videoPlaying ? `<iframe src="${active.embed}&autoplay=1" title="${active.title}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>` : `<img class="img-fallback" data-fallback="${svgPhoto(active.title, ["#2563eb", "#67e8f9"])}" src="${active.thumb}" alt="${active.title}" /><div class="video-play-overlay"><button class="play-button" type="button" data-action="play-video">▶ ${t("common.playVideo")}</button></div>`}
+              ${state.videoPlaying ? `<iframe src="${active.embed}&autoplay=1" title="${active.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>` : `<img class="img-fallback" data-fallback="${svgPhoto(active.title, ["#2563eb", "#67e8f9"])}" src="${active.thumb}" alt="${active.title}" /><div class="video-play-overlay"><button class="play-button" type="button" data-action="play-video">▶ ${t("common.playVideo")}</button></div>`}
             </div>
             <div class="video-player-body"><h3 style="margin:0;">${active.title}</h3><p style="margin:8px 0 0;">${t("common.duration")}: ${active.duration}</p></div>
           </div>
