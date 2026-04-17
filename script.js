@@ -69,7 +69,7 @@ const i18n = {
       cta: "Register",
     },
     footer: {
-      text: "A multilingual, production-ready conference website built with plain HTML, CSS, and JavaScript.",
+      text: "CoREViP is a permanent organ of the AAU responsible for debating and taking concerted action to reinforce inter-university co-operation.",
     },
     common: {
       all: "All",
@@ -265,7 +265,7 @@ const i18n = {
       cta: "S’inscrire",
     },
     footer: {
-      text: "Un site de conférence multilingue, prêt pour la production, construit en HTML, CSS et JavaScript.",
+      text: "Le CoREViP est un organe permanent de l'AAU chargé de mener des discussions et de prendre des mesures concertées afin de renforcer la coopération interuniversitaire.",
     },
     common: {
       all: "Tout",
@@ -462,7 +462,7 @@ const i18n = {
       cta: "سجل الآن",
     },
     footer: {
-      text: "موقع مؤتمر متعدد اللغات وجاهز للإنتاج مبني باستخدام HTML وCSS وJavaScript.",
+      text: ".تعد CoREViP هيئة دائمة تابعة للاتحاد الأفريقي للجامعات (AAU) مسؤولة عن مناقشة سبل تعزيز التعاون بين الجامعات واتخاذ إجراءات منسقة في هذا الصدد.",
     },
     common: {
       all: "الكل",
@@ -653,7 +653,7 @@ const i18n = {
       cta: "Registar",
     },
     footer: {
-      text: "Um website de conferência multilíngue, pronto para produção, construído com HTML, CSS e JavaScript.",
+      text: "O CoREViP é um órgão permanente da AAU responsável por debater e tomar medidas concertadas para reforçar a cooperação interuniversitária.",
     },
     common: {
       all: "Todos",
