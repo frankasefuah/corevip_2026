@@ -60,7 +60,7 @@ const i18n = {
     htmlLang: "en",
     nav: {
       about: "About",
-      program: "Program",
+      program: "Programme",
       speakers: "Speakers",
       gallery: "Venue & Gallery",
       registration: "Registration",
@@ -99,7 +99,7 @@ const i18n = {
       text1: `${EVENT_CONTENT.host} and ${EVENT_CONTENT.cohost} invite university leaders and stakeholders to Nairobi for a landmark edition of CoREViP under the theme “${EVENT_CONTENT.theme}.”`,
       text2: `A premium conference website concept built around ${EVENT_CONTENT.milestone}, policy dialogue, academic exchange, and innovation showcases.`,
       button1: "Explore Event",
-      button2: "View Program",
+      button2: "View Programme",
       button3: "Submit Abstract",
       stat1: "4",
       statLabel1: "Conference days",
@@ -166,37 +166,37 @@ const i18n = {
       feature4Text: `Abstract deadline: ${EVENT_CONTENT.submissionAbstract}.`,
     },
     program: {
-      eyebrow: "Program",
-      title: "Conference schedule from the draft programme structure",
-      text: "Switch between tab view and accordion view. Sessions below reflect your uploaded draft programme structure.",
+      eyebrow: "Programme",
+      title: "Conference schedule",
+      text: "There will be preconference activities as well.",
     },
     speakers: {
-      eyebrow: "Featured roles",
-      title:
-        "Profiles designed to spotlight conference leadership and contributors",
-      text: "Replace these profiles with confirmed speakers, moderators, and dignitaries once available.",
+      eyebrow: "Event Speakers",
+      title: "Here are some of our Keynote Speakers",
+      text: "",
     },
     gallery: {
-      eyebrow: "Venue & Gallery",
-      title: "Venue preview, Google map, and conference atmosphere",
-      text: "The venue map is merged into this section. Replace the sample images with real event or venue photos from assets/images.",
+      eyebrow: "Event Venue",
+      title: "Venue, Google map, and conference atmosphere",
+      text: "",
       mapTitle: "Venue Location",
-      mapText: `Map preview for ${EVENT_CONTENT.venue}. Replace the embed query in script.js if you want a more precise location.`,
+      mapText: "",
+      // mapText: `Map preview for ${EVENT_CONTENT.venue}. Adjust the map query in script.js if you want a different location or more specific pin.`,
     },
     videos: {
       eyebrow: "Videos",
-      title: "Embedded videos for teaser content and official messages",
-      text: "Replace demo videos with the official trailer, chairperson message, sponsor reels, or venue preview.",
+      title: "Videos to give you a taste of CoREViP",
+      text: "",
     },
     testimonials: {
       eyebrow: "Testimonials",
       title: "Feedback from institutional participants and delegates",
-      text: "Use this slider for remarks from previous attendees, partners, host institutions, or student innovators.",
+      text: "",
     },
     partners: {
       eyebrow: "Strategic partners",
       title: "Interactive partner and stakeholder wall",
-      text: "Use linked logo cards for institutions, agencies, and development partners.",
+      text: "",
     },
     exhibitors: {
       eyebrow: "Expo & showcase",
@@ -363,9 +363,8 @@ const i18n = {
     },
     program: {
       eyebrow: "Programme",
-      title:
-        "Calendrier de la conférence basé sur la structure du projet de programme",
-      text: "Passez de la vue par onglets à la vue accordéon. Les sessions ci-dessous reflètent la structure du projet téléchargé.",
+      title: "Programme de la conférence",
+      text: "Des activités seront également organisées en amont de la conférence.",
     },
     speakers: {
       eyebrow: "Rôles mis en avant",
@@ -556,8 +555,8 @@ const i18n = {
     },
     program: {
       eyebrow: "البرنامج",
-      title: "جدول المؤتمر المعتمد على هيكل البرنامج المرفوع",
-      text: "يمكنك التبديل بين عرض التبويبات وعرض الأكورديون. الجلسات أدناه تعكس هيكل البرنامج المبدئي المرفوع.",
+      title: "جدول المؤتمر",
+      text: "وستُقام أيضًا أنشطة تمهيدية للمؤتمر.",
     },
     speakers: {
       eyebrow: "أدوار مميزة",
@@ -752,9 +751,8 @@ const i18n = {
     },
     program: {
       eyebrow: "Programa",
-      title:
-        "Agenda da conferência baseada na estrutura preliminar do programa",
-      text: "Alterne entre vista por separadores e vista em acordeão. As sessões abaixo refletem a estrutura carregada.",
+      title: "Programa da conferência",
+      text: "Haverá também atividades pré-conferência.",
     },
     speakers: {
       eyebrow: "Funções em destaque",
