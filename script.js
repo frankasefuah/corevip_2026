@@ -225,9 +225,9 @@ const i18n = {
       info4: `Contact: ${EVENT_CONTENT.contactEmail}`,
     },
     tickets: {
-      eyebrow: "Registration options",
-      title: "Registration or attendance categories",
-      text: "These cards can be turned into registration categories, sponsorship packages, or attendee tiers.",
+      eyebrow: "Tickets",
+      title: "Registration Categories",
+      text: "Special discount for 2 more participants.",
     },
     contact: {
       eyebrow: "Contact",
@@ -1140,8 +1140,8 @@ const hotels = [
 
 const ticketTiers = [
   {
-    name: "Delegate",
-    price: "$120",
+    name: "AAU Non-Member Delegate",
+    price: "$500",
     features: [
       "Conference sessions",
       "Program materials",
@@ -1151,27 +1151,60 @@ const ticketTiers = [
     cta: "Register Delegate",
   },
   {
-    name: "Premium Delegate",
-    price: "$220",
+    name: "Early Bird Delegate",
+    price: "$350",
     featured: true,
     features: [
-      "Priority seating",
-      "Gala dinner access",
-      "Premium welcome pack",
-      "Full conference access",
+      "Conference sessions",
+      "Program materials",
+      "Expo access",
+      "Networking activities",
     ],
-    cta: "Choose Premium",
+    cta: "Register Delegate",
   },
   {
-    name: "Partner / Sponsor",
-    price: "$500",
+    name: "Kenyan University Delegate",
+    price: "$300",
     features: [
-      "Partner visibility",
-      "Networking access",
-      "Expo participation",
-      "Engagement opportunities",
+      "Conference sessions",
+      "Program materials",
+      "Expo access",
+      "Networking activities",
     ],
-    cta: "Request Package",
+    cta: "Register Delegate",
+  },
+  {
+    name: "Phd & Other Students",
+    price: "$250",
+    features: [
+      "Conference sessions",
+      "Program materials",
+      "Expo access",
+      "Networking activities",
+    ],
+    cta: "Register Delegate",
+  },
+  {
+    name: "Corporate / Industry / Partner Delegate",
+    price: "$550",
+    features: [
+      "Conference sessions",
+      "Program materials",
+      "Expo access",
+      "Networking activities",
+    ],
+    cta: "Register Delegate",
+  },
+  {
+    name: "Kenyan Student Delegate",
+    price: "$200",
+    features: [
+      "Conference sessions",
+      "Program materials",
+      "Expo access",
+      "Networking activities",
+    ],
+    cta: "Register Delegate",
   },
 ];
 
