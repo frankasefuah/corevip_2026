@@ -38,11 +38,11 @@ const EVENT_CONTENT = {
   theme:
     "Repositioning African Universities for Resilience, Relevance, and Impact",
   milestone: "AAU Diamond Jubilee (1967–2027)",
-  contactEmail: "corevip2026@aau.org",
-  exhibitionEmail: "corevip2026@aau.org",
-  sponsorshipEmail: "corevip2026@aau.org",
+  contactEmail: "corevip2027@aau.org",
+  exhibitionEmail: "corevip2027@aau.org",
+  sponsorshipEmail: "corevip2027@aau.org",
   phone: "+233 000 000 000",
-  registrationLink: "#",
+  registrationLink: "https://indico.aau.org/e/COREVIP-60",
   submissionAbstract: "26 February 2027",
   submissionAcceptance: "16 April 2027",
   submissionFullPaper: "14 May 2027",
@@ -87,7 +87,7 @@ const i18n = {
       prev: "Previous",
       expand: "Expand",
       collapse: "Collapse",
-      placeholder: "Placeholder",
+      placeholder: "",
       close: "Close",
     },
     hero: {
@@ -122,9 +122,9 @@ const i18n = {
         "Vibrant logo cards for institutions, hosts, and convening bodies.",
     },
     countdown: {
-      eyebrow: "Countdown to conference opening",
-      title: "CoREViP 2027 begins soon",
-      text: `Live countdown to the opening of ${EVENT_CONTENT.code}.`,
+      eyebrow: "Countdown",
+      title: "CoREViP 2027 begins in",
+      text: `Countdown to the opening of ${EVENT_CONTENT.code}.`,
       days: "Days",
       hours: "Hours",
       minutes: "Minutes",
@@ -172,8 +172,8 @@ const i18n = {
       text: "There will be preconference activities as well.",
     },
     speakers: {
-      eyebrow: "Event Speakers",
-      title: "Here are some of our Keynote Speakers",
+      eyebrow: "Speakers",
+      title: "Featured Keynote Speakers",
       text: "",
     },
     gallery: {
@@ -186,7 +186,7 @@ const i18n = {
     },
     videos: {
       eyebrow: "Videos",
-      title: "Videos to give you a taste of CoREViP",
+      title: "Experience CoREViP: Conference Video Previews",
       text: "",
     },
     testimonials: {
@@ -195,8 +195,8 @@ const i18n = {
       text: "",
     },
     partners: {
-      eyebrow: "Strategic partners",
-      title: "Interactive partner and stakeholder wall",
+      eyebrow: "EVENT Partners",
+      title: "Strategic Partners & Stakeholder wall",
       text: "",
     },
     exhibitors: {
@@ -205,20 +205,20 @@ const i18n = {
       text: "Feature expo booths, innovation hubs, university showcases, and research commercialization displays.",
     },
     hotels: {
-      eyebrow: "Hotels for booking",
-      title: "Accommodation options with filters and a slider layout",
-      text: "This section defaults to the slider version. Replace demo hotels with official accommodation partners and booking links.",
+      eyebrow: "Accomodation",
+      title: "Hotels",
+      text: "Here are some nearby hotels to the COREVIP Event Center",
     },
     registration: {
       eyebrow: "Registration",
       title: "Registration and participation",
-      text: "Use this section for your real registration link, attendance instructions, and submission portal.",
+      text: "",
       cardTitle: "Register for CoREViP 2027",
       cardText:
-        "Secure your participation in the AAU Diamond Jubilee conference. Add your real registration portal when ready.",
-      button: "Open registration placeholder",
-      button2: "Open call for abstracts",
-      note: "This button currently points to a placeholder (#). Replace it in script.js using EVENT_CONTENT.registrationLink.",
+        "Secure your participation in the AAU Diamond Jubilee conference.",
+      button: "Register for CoREViP 2027",
+      button2: "Call for abstracts",
+      note: "TBD",
       infoTitle: "Important dates",
       info1: `Abstract deadline: ${EVENT_CONTENT.submissionAbstract}`,
       info2: `Acceptance notice: ${EVENT_CONTENT.submissionAcceptance}`,
@@ -238,17 +238,17 @@ const i18n = {
       phone: "Phone",
       exhibition: "Contact for Exhibition",
       sponsorship: "Contact for Sponsorship",
-      note: "Update the email addresses and phone number in EVENT_CONTENT inside script.js.",
+      note: "We will be glad to hear from you. Please reach out to us using the contact details provided.",
     },
     faq: {
       eyebrow: "FAQ",
       title: "Frequently asked questions",
-      text: "A simple accordion section for common participant, registration, travel, and submission questions.",
+      text: "",
     },
     blog: {
       eyebrow: "Conference updates",
-      title: "Recent notices, calls, and preview posts",
-      text: "Use this section for updates, call for papers, logistics, and conference notices.",
+      title: "Recent notices, calls, and posts",
+      text: "",
     },
   },
   fr: {
@@ -283,7 +283,7 @@ const i18n = {
       prev: "Précédent",
       expand: "Ouvrir",
       collapse: "Réduire",
-      placeholder: "Espace réservé",
+      placeholder: "",
       close: "Fermer",
     },
     hero: {
@@ -479,7 +479,7 @@ const i18n = {
       prev: "السابق",
       expand: "فتح",
       collapse: "إغلاق",
-      placeholder: "عنصر بديل",
+      placeholder: "",
       close: "إغلاق",
     },
     hero: {
@@ -670,7 +670,7 @@ const i18n = {
       prev: "Anterior",
       expand: "Expandir",
       collapse: "Recolher",
-      placeholder: "Marcador",
+      placeholder: "",
       close: "Fechar",
     },
     hero: {
@@ -997,10 +997,11 @@ const videos = [
     thumb: "assets/images/videos/corevip-teaser.jpg",
   },
   {
-    title: "Birth of the Association of African Universities",
-    duration: "09:10",
-    embed: "https://www.youtube.com/watch?v=OlVlt_awwj4&t=2s",
-    thumb: "assets/videos/formation of aau.jpg",
+    title: "14th General Conference & the 50th Anniversary of the AAU",
+    duration: "07:10",
+    embed:
+      "https://www.youtube.com/watch?v=IAlnXpoVPww&pp=ygUUYWF1IDUwdGggYW5uaXZlcnNhcnk%3D",
+    thumb: "assets/videos/14th AAU General Conference.png",
   },
   {
     title: "Kenya | The Trip of a Lifetime",
@@ -1032,12 +1033,20 @@ const testimonials = [
 ];
 
 const partners = [
-  { name: "African Union", url: "#" },
+  {
+    name: "African Union",
+    url: "#",
+    logo: "assets/partners/logo-african-union.png",
+  },
   { name: "UNESCO", url: "#" },
   { name: "World Bank", url: "#" },
   { name: "African Development Bank", url: "#" },
-  { name: "AAU", url: "#" },
-  { name: "KCA University", url: "#" },
+  {
+    name: "AAU",
+    url: "#",
+    logo: "assets/partners/AAU Official Logos vector.png",
+  },
+  { name: "KCA University", url: "#", logo: "assets/partners/kca logo.webp" },
   { name: "Quality Assurance Agencies", url: "#" },
   { name: "Industry Partners", url: "#" },
 ];
@@ -1090,44 +1099,44 @@ const exhibitors = [
 */
 const hotels = [
   {
-    name: "Official Conference Hotel A",
-    stars: 5,
-    area: "Central",
-    price: 280,
-    tag: "Luxury",
-    link: "#",
-  },
-  {
-    name: "Business Stay Nairobi",
-    stars: 4,
-    area: "Airport",
-    price: 180,
-    tag: "Business",
-    link: "#",
-  },
-  {
-    name: "Preferred Delegate Hotel",
-    stars: 5,
-    area: "Central",
-    price: 320,
-    tag: "Luxury",
-    link: "#",
-  },
-  {
-    name: "Convenience City Hotel",
+    name: "The Luke Hotel- NAIROBI",
     stars: 3,
-    area: "Westlands",
-    price: 120,
+    area: "Garden Estate",
+    price: 31,
     tag: "Value",
-    link: "#",
+    link: "http://thelukehotel.co.ke/",
   },
   {
-    name: "Academic Guest Suites",
-    stars: 4,
-    area: "Airport",
-    price: 210,
+    name: "Sagas Hotel",
+    stars: 3,
+    area: "Thika",
+    price: 35,
+    tag: "Value",
+    link: "tel:+254721333512",
+  },
+  {
+    name: "Sunstar Hotel Nairobi",
+    stars: 3,
+    area: "Thika",
+    price: 65,
     tag: "Business",
-    link: "#",
+    link: "http://www.sunstarhotelnairobi.com/",
+  },
+  {
+    name: "Safari Park Hotel & Casino",
+    stars: 4,
+    area: "Host",
+    price: 240,
+    tag: "Luxury",
+    link: "https://www.safaripark-hotel.com/",
+  },
+  {
+    name: "Sportsview Hotel Kasarani",
+    stars: 3,
+    area: "Thika",
+    price: 62,
+    tag: "Value",
+    link: "https://www.sportsviewhotel.com/",
   },
   {
     name: "Budget Delegate Lodge",
@@ -2404,33 +2413,72 @@ function renderTestimonials() {
 /* ========================================================================
    PARTNERS
    ======================================================================== */
+// function renderPartners() {
+//   const variant = state.variants.partners;
+//   if (variant === "hide") return renderSection(ids.partners, "", true);
+//   const copy = t("partners");
+//   renderSection(
+//     ids.partners,
+//     `
+//     <section id="partners" class="block">
+//       <div class="container">
+//         ${sectionHeader({ eyebrow: copy.eyebrow, title: copy.title, text: copy.text, centered: true })}
+//         <div class="partners-grid ${variant}">
+//           ${partners
+//             .map(
+//               (partner, index) =>
+//                 `<a href="${partner.url}" class="partner-card ${variant === "v2" ? "is-gradient" : ""} reveal" style="transition-delay:${index * 40}ms;"><div class="partner-icon">${partner.name
+//                   .split(" ")
+//                   .map((w) => w[0])
+//                   .slice(0, 2)
+//                   .join(
+//                     "",
+//                   )}</div><h3 style="margin:18px 0 0; font-size:1.1rem;">${partner.name}</h3></a>`,
+//             )
+//             .join("")}
+//         </div>
+//       </div>
+//     </section>
+//   `,
+//   );
+// }
+
 function renderPartners() {
   const variant = state.variants.partners;
   if (variant === "hide") return renderSection(ids.partners, "", true);
+
   const copy = t("partners");
+
   renderSection(
     ids.partners,
     `
     <section id="partners" class="block">
       <div class="container">
-        ${sectionHeader({ eyebrow: copy.eyebrow, title: copy.title, text: copy.text, centered: true })}
+        ${sectionHeader({
+          eyebrow: copy.eyebrow,
+          title: copy.title,
+          text: copy.text,
+          centered: true,
+        })}
+
         <div class="partners-grid ${variant}">
           ${partners
             .map(
-              (partner, index) =>
-                `<a href="${partner.url}" class="partner-card ${variant === "v2" ? "is-gradient" : ""} reveal" style="transition-delay:${index * 40}ms;"><div class="partner-icon">${partner.name
-                  .split(" ")
-                  .map((w) => w[0])
-                  .slice(0, 2)
-                  .join(
-                    "",
-                  )}</div><h3 style="margin:18px 0 0; font-size:1.1rem;">${partner.name}</h3></a>`,
+              (partner, index) => `
+            <a href="${partner.url}" class="partner-card" style="transition-delay:${index * 40}ms;">
+              <img 
+                src="${partner.logo}" 
+                alt="${partner.name}" 
+                class="partner-logo"
+              >
+            </a>
+          `,
             )
             .join("")}
         </div>
       </div>
     </section>
-  `,
+    `,
   );
 }
 
@@ -2552,10 +2600,10 @@ function renderRegistration() {
               <li>${copy.info3}</li>
               <li>${copy.info4}</li>
             </ul>
-            <div class="contact-note">
-              <strong>Image example from assets/images</strong>
-              <p style="margin:8px 0 0;">Use image paths from the root like <code>assets/images/hero.jpg</code> or <code>assets/images/gallery/venue-hall.jpg</code>. See README.txt and script.js comments for exact examples.</p>
-            </div>
+             <div class="contact-note">
+               <strong>Early Bird Special</strong>
+               <p style="margin:8px 0 0;">Early Bird Offer available for $350</p>
+             </div> 
           </article>
         </div>
       </div>
@@ -2621,7 +2669,7 @@ function renderContact() {
           </article>
           <article class="contact-card reveal">
             <h3 style="margin-top:0;">Partnership enquiries</h3>
-            <p>Use the buttons below for quick outreach related to exhibition opportunities and sponsorship conversations.</p>
+            <p>Click the buttons below for quick outreach related to exhibition opportunities and sponsorship conversations.</p>
             <div class="contact-actions">
               <a class="button button-primary" href="mailto:${EVENT_CONTENT.exhibitionEmail}?subject=CoREViP%202027%20Exhibition%20Enquiry">${copy.exhibition}</a>
               <a class="button-secondary" href="mailto:${EVENT_CONTENT.sponsorshipEmail}?subject=CoREViP%202027%20Sponsorship%20Enquiry">${copy.sponsorship}</a>

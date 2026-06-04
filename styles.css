@@ -852,3 +852,25 @@ body.rtl .lightbox-close { right: auto; left: 20px; }
     height: 40px;
   }
 }
+
+/* PARTNER LOGO */
+
+.partner-logo {
+  height: 70px;        /* ✅ same height for all */
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+}
+
+.partner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
