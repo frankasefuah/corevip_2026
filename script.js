@@ -27,6 +27,7 @@ const EVENT_DATE = new Date("2027-07-20T08:00:00");
 
 const EVENT_CONTENT = {
   code: "CoREViP 2027",
+  logo: "url(/assets/logos/corevip-logo.png) no-repeat center",
   title:
     "Conference of Rectors, Vice-Chancellors and Presidents of African Universities",
   host: "Association of African Universities",
@@ -45,7 +46,7 @@ const EVENT_CONTENT = {
   submissionAbstract: "26 February 2027",
   submissionAcceptance: "16 April 2027",
   submissionFullPaper: "14 May 2027",
-  submissionPortal: "https://indico.aau.org/event/1/abstracts/",
+  submissionPortal: "https://indico.aau.org/event/17/abstracts/",
 };
 
 /* ========================================================================

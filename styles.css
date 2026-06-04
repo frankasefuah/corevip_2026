@@ -838,3 +838,17 @@ body.rtl .lightbox-close { right: auto; left: 20px; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* LOGO */
+
+.logo-image {
+  height: 50px;
+  max-height: 60px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 40px;
+  }
+}
