@@ -42,7 +42,7 @@ const EVENT_CONTENT = {
   exhibitionEmail: "corevip2027@aau.org",
   sponsorshipEmail: "corevip2027@aau.org",
   phone: "+233 000 000 000",
-  registrationLink: "https://indico.aau.org/e/COREVIP-60",
+  registrationLink: "https://indico.aau.org/event/17/registrations/",
   submissionAbstract: "26 February 2027",
   submissionAcceptance: "16 April 2027",
   submissionFullPaper: "14 May 2027",
@@ -205,7 +205,7 @@ const i18n = {
       text: "Feature expo booths, innovation hubs, university showcases, and research commercialization displays.",
     },
     hotels: {
-      eyebrow: "Accomodation",
+      eyebrow: "Accommodation",
       title: "Hotels",
       text: "Here are some nearby hotels to the COREVIP Event Center",
     },
