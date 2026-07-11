@@ -41,7 +41,7 @@ const EVENT_CONTENT = {
   contactEmail: "corevip2027@aau.org",
   exhibitionEmail: "corevip2027@aau.org",
   sponsorshipEmail: "corevip2027@aau.org",
-  phone: "+233 000 000 000",
+  phone: "N/A",
   registrationLink: "https://indico.aau.org/event/17/registrations/",
   submissionAbstract: "26 February 2027",
   submissionAcceptance: "16 April 2027",
@@ -95,8 +95,7 @@ const i18n = {
       eyebrow2:
         "Celebrating 60 years of continental higher education leadership",
       title1: "CoREViP 2027",
-      title2:
-        'A Future-Facing <span class="gradient-text">African University</span>',
+      title2: `Universities for <span class="gradient-text">Africa's Future </span>`,
       text1: `${EVENT_CONTENT.host} and ${EVENT_CONTENT.cohost} invite university leaders and stakeholders to Nairobi for a landmark edition of CoREViP under the theme “${EVENT_CONTENT.theme}.”`,
       text2: `Pillars of the Conference Theme - "${EVENT_CONTENT.theme}": <ul><li>FUTURE-READY AFRICAN UNIVERSITIES - Transforming Teaching, Learning and Skills Development</li>
       <li>RESEARCH, INNOVATION AND AFRICAN SOLUTIONS - Universities as Engines of Knowledge Creation</li>
@@ -233,7 +232,7 @@ const i18n = {
     tickets: {
       eyebrow: "Tickets",
       title: "Registration Categories",
-      text: "Special discount for 2 more participants.",
+      text: "Non-Kenyan institutions are entitled to a discount covering the participation of 3 or more delegates.",
     },
     contact: {
       eyebrow: "Contact",
@@ -883,9 +882,7 @@ const organizerLogos = [
   { name: "Association of African Universities", mark: "AAU", url: "#" },
   { name: "KCA University", mark: "KCA", url: "#" },
   { name: "African Union", mark: "AU", url: "#" },
-  { name: "UNESCO", mark: "UN", url: "#" },
-  { name: "World Bank", mark: "WB", url: "#" },
-  { name: "African Development Bank", mark: "AfDB", url: "#" },
+  { name: "Development Partners", mark: "DP", url: "#" },
 ];
 
 /*
@@ -897,10 +894,10 @@ const organizerLogos = [
 */
 const speakers = [
   {
-    name: "Prof. Matengu",
+    name: "Prof. Kenneth Matengu",
     role: "AAU President",
     topic: "Opening Ceremony",
-    bio: "Replace with the confirmed representative from KCA University.",
+    bio: "",
     image: "assets/speakers/Matengu-UNAM-VC.png",
     colors: ["#2563eb", "#22d3ee"],
   },
@@ -908,7 +905,7 @@ const speakers = [
     name: "Prof. Olushola Oyewole",
     role: "Secretary General, AAU",
     topic: "Opening Ceremony",
-    bio: "Replace with the confirmed representative from KCA University.",
+    bio: "",
     image: "assets/speakers/SG-2.png",
     colors: ["#2563eb", "#22d3ee"],
   },
@@ -916,7 +913,7 @@ const speakers = [
     name: "Dr. Nicolas Patrici",
     role: "Goodwill Message",
     topic: "Partnerships & Cooperation",
-    bio: "Replace with a confirmed partner speaker from AU, UNESCO, World Bank, or AfDB.",
+    bio: "",
     image: "assets/speakers/Dr.-Nicolas-Patrici.jpg.jpeg",
     colors: ["#2563eb", "#818cf8"],
   },
@@ -925,17 +922,9 @@ const speakers = [
     name: "Chairperson, AAU Board",
     role: "Leadership Remarks",
     topic: "Institutional Leadership",
-    bio: "Replace with the confirmed chairperson profile and biography.",
+    bio: "",
     image: "",
     colors: ["#1d4ed8", "#60a5fa"],
-  },
-  {
-    name: "Government of Kenya",
-    role: "Guest of Honor",
-    topic: "Policy Remarks",
-    bio: "Replace with the designated government representative for the opening ceremony.",
-    image: "",
-    colors: ["#0ea5e9", "#67e8f9"],
   },
 ];
 
@@ -1177,6 +1166,17 @@ const ticketTiers = [
     name: "Early Bird Delegate",
     price: "$350",
     featured: true,
+    features: [
+      "Conference sessions",
+      "Program materials",
+      "Expo access",
+      "Networking activities",
+    ],
+    cta: "Register Delegate",
+  },
+  {
+    name: "Standard Registration",
+    price: "$400",
     features: [
       "Conference sessions",
       "Program materials",
@@ -1796,46 +1796,78 @@ const schedule = [
   {
     key: "day3",
     dayLabel: { en: "Day 3", fr: "Jour 3", ar: "اليوم 3", pt: "Dia 3" },
-    title: { en: "Impact", fr: "Impact", ar: "الأثر", pt: "Impacto" },
+    title: { en: "", fr: "", ar: "", pt: "" },
     subtitle: {
-      en: "Strategic Leadership Dialogues & Best Practice Showcase",
-      fr: "Dialogues stratégiques et vitrine des bonnes pratiques",
-      ar: "حوارات القيادة الاستراتيجية وعرض أفضل الممارسات",
-      pt: "Diálogos estratégicos e mostra de boas práticas",
+      en: "Showcasing African Excellence",
+      fr: "Mettre en valeur l’excellence africaine",
+      ar: "إبراز التميز الأفريقي",
+      pt: "Destacando a Excelência Africana",
     },
     items: [
       {
-        time: "08:30 – 10:00",
+        time: "09:00 – 10:00",
         title: {
-          en: "Vice-Chancellors Leadership Roundtable",
-          fr: "Table ronde des vice-chanceliers",
-          ar: "المائدة المستديرة لقادة الجامعات",
-          pt: "Mesa-redonda de vice-reitores",
+          en: "Innovation Exhibition Opens",
+          fr: "L’exposition de l’innovation s’ouvre",
+          ar: "تُفتح معرض الابتكار",
+          pt: "Abertura da Exposição de Inovação",
         },
         desc: {
-          en: "Theme: Leading African Universities in an Era of Disruption.",
-          fr: "Thème : Diriger les universités africaines dans une ère de disruption.",
-          ar: "الموضوع: قيادة الجامعات الأفريقية في عصر الاضطراب.",
-          pt: "Tema: Liderar universidades africanas numa era de disrupção.",
+          en: `Exhibitors:<br>
+          <li>  Universities </li>
+          <li>  Startups </li>
+          <li>  Research Centres </li>
+          <li>  Technology Companies </li>`,
+          fr: `Exposants :<br>
+          <li>  Universités </li>
+          <li>  Startups </li>
+          <li>  Centres de recherche </li>
+          <li>  Entreprises technologiques </li>`,
+          ar: `المؤسسات المشاركة:<br>
+          <li>  الجامعات </li>
+          <li>  الشركات الناشئة </li>
+          <li>  مراكز البحث </li>
+          <li>  شركات التقنية </li>`,
+          pt: `Expositores:<br>
+          <li>  Universidades </li>
+          <li>  Startups </li>
+          <li>  Centros de Pesquisa </li>
+          <li>  Empresas de Tecnologia </li>`,
         },
       },
       {
-        time: "08:30 – 10:00",
+        time: "10:00 – 10:45",
         title: {
-          en: "Best Practice Showcases (1)",
-          fr: "Vitrines des bonnes pratiques (1)",
-          ar: "عروض أفضل الممارسات (1)",
-          pt: "Mostras de boas práticas (1)",
+          en: "Innovation Showcase",
+          fr: "Présentation de l'innovation",
+          ar: "عرض الابتكار",
+          pt: "Apresentação da Inovação",
         },
         desc: {
-          en: "Selected institutions present case studies on digital transformation, partnerships, climate leadership, and innovation ecosystems.",
-          fr: "Des institutions sélectionnées présentent des études de cas sur la transformation numérique, les partenariats, le climat et les écosystèmes d’innovation.",
-          ar: "تقدم مؤسسات مختارة دراسات حالة حول التحول الرقمي والشراكات والقيادة المناخية ومنظومات الابتكار.",
-          pt: "Instituições selecionadas apresentam estudos de caso sobre transformação digital, parcerias, liderança climática e ecossistemas de inovação.",
+          en: `Exhibitors:<br>
+          <li>  Universities </li>
+          <li>  Startups </li>
+          <li>  Research Centres </li>
+          <li>  Technology Companies </li>`,
+          fr: `Exposants :<br>
+          <li>  Universités </li>
+          <li>  Startups </li>
+          <li>  Centres de recherche </li>
+          <li>  Entreprises technologiques </li>`,
+          ar: `المؤسسات المشاركة:<br>
+          <li>  الجامعات </li>
+          <li>  الشركات الناشئة </li>
+          <li>  مراكز البحث </li>
+          <li>  شركات التقنية </li>`,
+          pt: `Expositores:<br>
+          <li>  Universidades </li>
+          <li>  Startups </li>
+          <li>  Centros de Pesquisa </li>
+          <li>  Empresas de Tecnologia </li>`,
         },
       },
       {
-        time: "10:00 – 10:30",
+        time: "10:45 – 11:15",
         title: {
           en: "Coffee Break",
           fr: "Pause-café",
@@ -1850,33 +1882,57 @@ const schedule = [
         },
       },
       {
-        time: "10:30 – 12:00",
+        time: "11:15 – 12:00",
         title: {
-          en: "Ministerial Policy Dialogue",
-          fr: "Dialogue politique ministériel",
-          ar: "الحوار الوزاري حول السياسات",
-          pt: "Diálogo político ministerial",
+          en: "Future Skills Forum – Youth-focused discussions",
+          fr: "Forum sur les compétences futures – Discussions axées sur la jeunesse",
+          ar: "منتدى المهارات المستقبلية - مناقشات تركز على الشباب",
+          pt: "Fórum sobre Habilidades Futuras – Discussões centradas nos jovens",
         },
         desc: {
-          en: "Theme: Policy Frameworks for the Future African University, with ministers, regional bodies, and university leaders.",
-          fr: "Thème : cadres politiques pour l’université africaine du futur, avec ministres, organismes régionaux et dirigeants universitaires.",
-          ar: "الموضوع: أطر السياسات للجامعة الأفريقية المستقبلية بمشاركة الوزراء والهيئات الإقليمية وقادة الجامعات.",
-          pt: "Tema: quadros políticos para a universidade africana do futuro, com ministros, órgãos regionais e líderes universitários.",
+          en: `Participants:<br>
+          <li>  Students </li>
+          <li>  Industry Leaders </li>
+          <li>  Employers </li>`,
+          fr: `Participants :<br>
+          <li>  Étudiants </li>
+          <li>  Dirigeants de l’industrie </li>
+          <li>  Employeurs </li>`,
+          ar: `المشاركين:<br>
+          <li>  الطلاب </li>
+          <li>  قادة الصناعة </li>
+          <li>  أصحاب العمل </li>`,
+          pt: `Participantes:<br>
+          <li>  Estudantes </li>
+          <li>  Líderes da Indústria </li>
+          <li>  Empregadores </li>`,
         },
       },
       {
         time: "12:00 – 13:00",
         title: {
-          en: "University–Industry Partnership Forum",
-          fr: "Forum partenariats université-industrie",
-          ar: "منتدى شراكات الجامعة والصناعة",
-          pt: "Fórum universidade-indústria",
+          en: "Vice-Chancellors’ Leadership Forum (Closed Session)",
+          fr: "Forum de leadership des vice-chanceliers (session fermée)",
+          ar: "منتدى قادة الندوات الجامعية (الجلسة المغلقة)",
+          pt: "Fórum de Liderança dos Vice-Reitores (Sessão Fechada)",
         },
         desc: {
-          en: "Focused engagement on collaboration and innovation.",
-          fr: "Engagement ciblé sur la collaboration et l’innovation.",
-          ar: "جلسة مركزة على التعاون والابتكار.",
-          pt: "Envolvimento focado em colaboração e inovação.",
+          en: `Topics:<br>
+          <ul><li>Governance </li>
+          <li>Autonomy </li>
+          <li>Institutional Resilience </li></ul>`,
+          fr: `Sujets :<br>
+          <ul><li>Gouvernance </li>
+          <li>Autonomie </li>
+          <li>Résilience institutionnelle </li></ul>`,
+          ar: `الموضوعات:<br>
+          <ul><li>الحوكمة </li>
+          <li>الاستقلالية </li>
+          <li>المرونة المؤسسية </li></ul>`,
+          pt: `Tópicos:<br>
+          <ul><li>Governança </li>
+          <li>Autonomia </li>
+          <li>Resiliência Institucional </li></ul>`,
         },
       },
       {
@@ -1890,33 +1946,73 @@ const schedule = [
         },
       },
       {
-        time: "14:30 – 18:00",
+        time: "14:00 – 15:30",
         title: {
-          en: "Cultural & Networking Excursion / Best Practice Showcases (2)",
-          fr: "Excursion culturelle et réseautage / bonnes pratiques (2)",
-          ar: "رحلة ثقافية وتواصل / عروض أفضل الممارسات (2)",
-          pt: "Excursão cultural e networking / boas práticas (2)",
+          en: "Global University Leaders Forum – The Future of International Higher Education Partnerships",
+          fr: "Forum des dirigeants universitaires mondiaux – L’avenir des partenariats internationaux en matière d’enseignement supérieur",
+          ar: "منتدى قادة الجامعات العالمية – مستقبل الشراكات في التعليم العالي الدولي",
+          pt: "Fórum dos Líderes Universitários Globais – O Futuro das Parcerias em Educação Superior Internacional",
         },
         desc: {
-          en: "Afternoon cultural engagement and continued institutional showcases.",
-          fr: "Engagement culturel l’après-midi et poursuite des vitrines institutionnelles.",
-          ar: "تفاعل ثقافي بعد الظهر واستمرار عروض المؤسسات.",
-          pt: "Atividade cultural à tarde e continuação das mostras institucionais.",
+          en: `Participants:<br>
+          <li>  Africa </li>
+          <li>  Europe </li>
+          <li>  North America </li>
+          <li>  Asia </li>
+          <li>  Latin America </li>`,
+          fr: `Participants :<br>
+          <li>  Afrique </li>
+          <li>  Europe </li>
+          <li>  Amérique du Nord </li>
+          <li>  Asie </li>
+          <li>  Amérique latine </li>`,
+          ar: `المشاركين:<br>
+          <li>  أفريقيا </li>
+          <li>  أوروبا </li>
+          <li>  أمريكا الشمالية </li>
+          <li>  آسيا </li>
+          <li>  أمريكا اللاتينية </li>`,
+          pt: `Participantes:<br>
+          <li>  África </li>
+          <li>  Europa </li>
+          <li>  América do Norte </li>
+          <li>  Ásia </li>
+          <li>  América Latina </li>`,
         },
       },
       {
-        time: "Evening",
+        time: "15:30 – 17:00",
         title: {
-          en: "AAU 60th Anniversary Gala Dinner & Awards Night",
-          fr: "Dîner de gala du 60e anniversaire de l’AAU",
-          ar: "حفل عشاء اليوبيل الستين للـAAU وجوائز",
-          pt: "Jantar de gala e prémios do 60.º aniversário da AAU",
+          en: "African University Innovation Awards ",
+          fr: "Prix de l’innovation universitaire africaine",
+          ar: "جوائز الابتكار الجامعي الأفريقي",
+          pt: "Prémios de Inovação Universitária Africana",
         },
         desc: {
-          en: "Recognition of distinguished African scholarship and awards for research excellence, innovation impact, and university leadership.",
-          fr: "Reconnaissance de la recherche africaine distinguée et prix pour l’excellence en recherche, l’impact de l’innovation et le leadership universitaire.",
-          ar: "تكريم الباحثين المتميزين في أفريقيا ومنح جوائز للتميز البحثي وأثر الابتكار والقيادة الجامعية.",
-          pt: "Reconhecimento da investigação africana de destaque e prémios para excelência em investigação, impacto da inovação e liderança universitária.",
+          en: `Awards for:<br>
+          <li>Most Innovative University </li>
+          <li>Best AI Initiative </li>
+          <li>Best Industry Partnership </li>
+          <li>Best Research Impact </li>
+          <li>Outstanding Student Innovation </li>`,
+          fr: `Prix pour :<br>
+          <li>Université la plus innovante </li>
+          <li>Meilleure initiative en matière d’IA </li>
+          <li>Meilleur partenariat industriel </li>
+          <li>Meilleur impact de la recherche </li>
+          <li>Innovation étudiante exceptionnelle </li>`,
+          ar: `الجوائز لـ:<br>
+          <li>أكثر الجامعات ابتكارًا </li>
+          <li>أفضل مبادرة في مجال الذكاء الاصطناعي </li>
+          <li>أفضل شراكة صناعية </li>
+          <li>أفضل تأثير للبحث </li>
+          <li>ابتكار طلابي بارز </li>`,
+          pt: `Prémios para:<br>
+          <li>Universidade mais inovadora </li>
+          <li>Melhor iniciativa de IA </li>
+          <li>Melhor parceria industrial </li>
+          <li>Melhor impacto da pesquisa </li>
+          <li>Inovação estudantil excepcional </li>`,
         },
       },
     ],
@@ -1925,31 +2021,29 @@ const schedule = [
     key: "day4",
     dayLabel: { en: "Day 4", fr: "Jour 4", ar: "اليوم 4", pt: "Dia 4" },
     title: {
-      en: "Future & Commitments",
-      fr: "Avenir et engagements",
-      ar: "المستقبل والالتزامات",
-      pt: "Futuro e compromissos",
+      en: "",
+      fr: "A",
+      ar: "",
+      pt: "",
     },
     subtitle: {
-      en: "Commitments and Closing",
-      fr: "Engagements et clôture",
-      ar: "الالتزامات والختام",
-      pt: "Compromissos e encerramento",
+      en: "From Dialogue to Action",
+      fr: "Du dialogue à l’action",
+      ar: "من الحوار إلى العمل",
+      pt: "Do diálogo à ação",
     },
     items: [
       {
         time: "09:00 – 10:30",
         title: {
-          en: "Synthesis Plenary",
-          fr: "Plénière de synthèse",
-          ar: "الجلسة الختامية التجميعية",
-          pt: "Plenária de síntese",
+          en: "Future of African Higher Education Forum",
+          fr: "Futur de l'enseignement supérieur africain",
+          ar: "مستقبل التعليم العالي الأفريقي",
+          pt: "Futuro da Educação Superior Africana",
         },
         desc: {
-          en: "Reports from all tracks and communities of practice meetings.",
-          fr: "Rapports de toutes les pistes et des communautés de pratique.",
-          ar: "تقارير من جميع المسارات ومجتمعات الممارسة.",
-          pt: "Relatórios de todas as trilhas e comunidades de prática.",
+          en: "Presentation of Outcomes",
+          fr: "Présentation des résul",
         },
       },
       {
@@ -1970,20 +2064,36 @@ const schedule = [
       {
         time: "11:00 – 12:00",
         title: {
-          en: "Presentation of Communities of Practice Communiqué",
-          fr: "Présentation du communiqué des communautés de pratique",
-          ar: "عرض بيان مجتمعات الممارسة",
-          pt: "Apresentação do comunicado das comunidades de prática",
+          en: "Launch of Major Continental Initiatives ",
+          fr: "Lancement de grandes initiatives continentales",
+          ar: "إطلاق مبادرات قارية كبرى",
+          pt: "Lançamento de Grandes Iniciativas Continentais",
         },
         desc: {
-          en: "Summary of practical commitments and institutional operations insights.",
-          fr: "Résumé des engagements pratiques et des enseignements opérationnels.",
-          ar: "ملخص الالتزامات العملية والدروس التشغيلية.",
-          pt: "Resumo dos compromissos práticos e lições operacionais.",
+          en: `<li>African University Resilience Index</li>
+          <li>African Future Skills Network</li>
+          <li>African University Leadership Academy</li>
+          <li>Africa Global Higher Education Partnership Forum</li>
+          <li>African University Innovation Network</li>`,
+          fr: `<li>Indice de résilience des universités africaines</li>
+          <li>Réseau africain des compétences futures</li>
+          <li>Académie africaine de leadership universitaire</li>
+          <li>Forum africain mondial des partenariats en matière d’enseignement supérieur</li>
+          <li>Réseau africain d’innovation universitaire</li>`,
+          ar: `<li>مؤشر مرونة الجامعات الأفريقية</li>
+          <li>شبكة المهارات المستقبلية الأفريقية</li>
+          <li>أكاديمية القيادة الجامعية الأفريقية</li>
+          <li>منتدى الشراكة العالمية للتعليم العالي في أفريقيا</li>
+          <li>شبكة الابتكار الجامعي الأفريقي</li>`,
+          pt: `<li>Índice de Resiliência das Universidades Africanas</li>
+          <li>Rede Africana de Competências Futuras</li>
+          <li>Academia Africana de Liderança Universitária</li>
+          <li>Fórum Global de Parcerias em Educação Superior da África</li>
+          <li>Rede Africana de Inovação Universitária</li>`,
         },
       },
       {
-        time: "12:00 – 12:45",
+        time: "12:00 – 13:00",
         title: {
           en: "Adoption of the Nairobi Declaration",
           fr: "Adoption de la Déclaration de Nairobi",
@@ -1991,40 +2101,87 @@ const schedule = [
           pt: "Adoção da Declaração de Nairobi",
         },
         desc: {
-          en: "Declaration on the Future of African Universities.",
-          fr: "Déclaration sur l’avenir des universités africaines.",
-          ar: "إعلان حول مستقبل الجامعات الأفريقية.",
-          pt: "Declaração sobre o futuro das universidades africanas.",
+          en: "A flagship policy document",
+          fr: "Un document de politique phare",
+          ar: "وثيقة سياسية رائدة",
+          pt: "Um documento de política pioneira",
         },
       },
       {
-        time: "12:45 – 13:30",
+        time: "13:00 – 14:00",
         title: {
-          en: "Closing Ceremony",
-          fr: "Cérémonie de clôture",
-          ar: "حفل الختام",
-          pt: "Cerimónia de encerramento",
+          en: "Lunch Break",
+          fr: "Pause déjeuner",
+          ar: "استراحة الغداء",
+          pt: "Pausa do Almoço",
         },
         desc: {
-          en: "Reflections from vice-chancellors, remarks from AAU leadership, and announcement of the next CoREViP host.",
-          fr: "Réflexions des vice-chanceliers, remarques de la direction de l’AAU et annonce du prochain hôte.",
-          ar: "تأملات قادة الجامعات وملاحظات قيادة AAU والإعلان عن مضيف CoREViP القادم.",
-          pt: "Reflexões dos vice-reitores, observações da liderança da AAU e anúncio do próximo anfitrião.",
+          en: "Midday break",
+          fr: "Pause de midi",
+          ar: "استراحة ظهر",
+          pt: "Pausa do meio-dia",
         },
       },
       {
-        time: "13:30",
+        time: "14:00 – 15:30",
         title: {
-          en: "Lunch & Departure",
-          fr: "Déjeuner et départ",
-          ar: "الغداء والمغادرة",
-          pt: "Almoço e partida",
+          en: "Closing Plenary – The African University We Want by 2040",
+          fr: "Plénière de clôture – L’université africaine que nous voulons d’ici 2040",
+          ar: "الجلسة الختامية – الجامعة الأفريقية التي نريدها بحلول عام 2040",
+          pt: "Plenária de Encerramento – A Universidade Africana que Queremos até 2040",
         },
         desc: {
-          en: "Conference close.",
-          fr: "Clôture de la conférence.",
-          ar: "ختام المؤتمر.",
-          pt: "Encerramento da conferência.",
+          en: `Featuring:<br>
+          <li>Ministers </li>
+          <li>Vice-Chancellors </li>
+          <li>Industry Leaders </li>
+          <li>Development Partners </li>`,
+          fr: `Au programme :<br>
+          <li>Ministres </li>
+          <li>Vice-chanceliers </li>
+          <li>Dirigeants de l’industrie </li>
+          <li>Partenaires au développement </li>`,
+          ar: `في البرنامج:<br>
+          <li>الوزراء </li>
+          <li>نواب الرئاسة الجامعية </li>
+          <li>قادة الصناعة </li>
+          <li>شركاء التنمية </li>`,
+          pt: `No programa:<br>
+          <li>Ministros </li>
+          <li>Vice-reitores </li>
+          <li>Líderes da Indústria </li>
+          <li>Parceiros de Desenvolvimento </li>`,
+        },
+      },
+      {
+        time: "15:30 – 17:00",
+        title: {
+          en: "Closing Ceremony ",
+          fr: "Cérémonie de clôture ",
+          ar: "حفل الختام ",
+          pt: "Cerimônia de Encerramento ",
+        },
+        desc: {
+          en: `Announcement of:<br>
+          <li>New partnerships </li>
+          <li>Sponsorship commitments </li>
+          <li>Legacy projects </li>
+          <li>Host of COREVIP 2029 </li>`,
+          fr: `Annonce de :<br>
+          <li>Nouveaux partenariats </li>
+          <li>Engagements de parrainage </li>
+          <li>Projets hérités </li>
+          <li>Hôte de COREVIP 2029 </li>`,
+          ar: `الإعلان عن:<br>
+          <li>شراكات جديدة </li>
+          <li>التزامات الرعاية </li>
+          <li>مشاريع إرثية </li>
+          <li>مضيف COREVIP 2029 </li>`,
+          pt: `Anúncio de:<br>
+          <li>Novas parcerias </li>
+          <li>Compromissos de patrocínio </li>
+          <li>Projetos legados </li>
+          <li>Anfitrião do COREVIP 2029 </li>`,
         },
       },
     ],
