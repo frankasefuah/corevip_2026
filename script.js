@@ -907,7 +907,7 @@ const speakers = [
     topic: "Opening Ceremony",
     bio: "",
     image: "assets/speakers/SG-2.png",
-    colors: ["#2563eb", "#22d3ee"],
+    colors: ["#CCA352;", "#212759"],
   },
   {
     name: "Dr. Nicolas Patrici",
@@ -2717,12 +2717,12 @@ function renderVideos() {
         <div class="video-layout ${variant}">
           <div class="video-player reveal">
             <div class="video-stage">
-              ${state.videoPlaying ? `<iframe src="${active.embed}&autoplay=1" title="${active.title}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>` : `<img class="img-fallback" data-fallback="${svgPhoto(active.title, ["#2563eb", "#67e8f9"])}" src="${active.thumb}" alt="${active.title}" /><div class="video-play-overlay"><button class="play-button" type="button" data-action="play-video">▶ ${t("common.playVideo")}</button></div>`}
+              ${state.videoPlaying ? `<iframe src="${active.embed}&autoplay=1" title="${active.title}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>` : `<img class="img-fallback" data-fallback="${svgPhoto(active.title, ["#212759", "#CCA352"])}" src="${active.thumb}" alt="${active.title}" /><div class="video-play-overlay"><button class="play-button" type="button" data-action="play-video">▶ ${t("common.playVideo")}</button></div>`}
             </div>
             <div class="video-player-body"><h3 style="margin:0;">${active.title}</h3><p style="margin:8px 0 0;">${t("common.duration")}: ${active.duration}</p></div>
           </div>
           <div class="video-list">
-            ${videos.map((video, index) => `<button class="video-thumb reveal ${state.activeVideo === index ? "active" : ""}" type="button" data-action="select-video" data-index="${index}"><span class="video-thumb-media"><img class="img-fallback" data-fallback="${svgPhoto(video.title, ["#1d4ed8", "#93c5fd"])}" src="${video.thumb}" alt="${video.title}" /><span class="video-duration">${video.duration}</span></span><span class="video-thumb-content"><h3>${video.title}</h3><p>${copy.text}</p></span></button>`).join("")}
+            ${videos.map((video, index) => `<button class="video-thumb reveal ${state.activeVideo === index ? "active" : ""}" type="button" data-action="select-video" data-index="${index}"><span class="video-thumb-media"><img class="img-fallback" data-fallback="${svgPhoto(video.title, ["#212759", "#CCA352"])}" src="${video.thumb}" alt="${video.title}" /><span class="video-duration">${video.duration}</span></span><span class="video-thumb-content"><h3>${video.title}</h3><p>${copy.text}</p></span></button>`).join("")}
           </div>
         </div>
       </div>
