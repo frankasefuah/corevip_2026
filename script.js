@@ -36,7 +36,7 @@ const EVENT_CONTENT = {
   mapQuery: "Safari Park Hotel, Nairobi Kenya",
   dates: "20–23 July 2027",
   theme:
-    "Repositioning African Universities for Resilience, Relevance, and Impact",
+    "Universities for Africa's Future: Repositioning African Universities for Resilience, Relevance and Global Impact",
   milestone: "AAU Diamond Jubilee (1967–2027)",
   contactEmail: "corevip2027@aau.org",
   exhibitionEmail: "corevip2027@aau.org",
@@ -98,7 +98,12 @@ const i18n = {
       title2:
         'A Future-Facing <span class="gradient-text">African University</span>',
       text1: `${EVENT_CONTENT.host} and ${EVENT_CONTENT.cohost} invite university leaders and stakeholders to Nairobi for a landmark edition of CoREViP under the theme “${EVENT_CONTENT.theme}.”`,
-      text2: `A premium conference website concept built around ${EVENT_CONTENT.milestone}, policy dialogue, academic exchange, and innovation showcases.`,
+      text2: `Pillars of the Conference Theme - "${EVENT_CONTENT.theme}": <ul><li>FUTURE-READY AFRICAN UNIVERSITIES - Transforming Teaching, Learning and Skills Development</li>
+      <li>RESEARCH, INNOVATION AND AFRICAN SOLUTIONS - Universities as Engines of Knowledge Creation</li>
+      <li>RESILIENT AND SUSTAINABLE UNIVERSITIES - Building Institutions Prepared for the Future</li>
+      <li>ETHICAL LEADERSHIP AND INSTITUTIONAL EXCELLENCE - Strengthening Trust, Governance and Accountability</li>
+      <li>GLOBAL AFRICAN HIGHER EDUCATION PARTNERSHIPS - Connecting Africa to the World</li>
+      </ul>`,
       button1: "Explore Event",
       button2: "View Programme",
       button3: "Submit Abstract",
@@ -123,8 +128,8 @@ const i18n = {
     },
     countdown: {
       eyebrow: "Countdown",
-      title: "CoREViP 2027 begins in",
-      text: `Countdown to the opening of ${EVENT_CONTENT.code}.`,
+      title: "CoREViP 2027<br> begins in:",
+      text: `Countdown to the opening of ${EVENT_CONTENT.code}`,
       days: "Days",
       hours: "Hours",
       minutes: "Minutes",
@@ -1317,16 +1322,16 @@ const schedule = [
     key: "day1",
     dayLabel: { en: "Day 1", fr: "Jour 1", ar: "اليوم 1", pt: "Dia 1" },
     title: {
-      en: "Resilience",
-      fr: "Résilience",
-      ar: "المرونة",
-      pt: "Resiliência",
+      en: "",
+      fr: "Célébration",
+      ar: "الاحتفال",
+      pt: "Celebração",
     },
     subtitle: {
-      en: "High-Level Policy Dialogue & Opening Ceremony",
-      fr: "Dialogue politique de haut niveau et cérémonie d’ouverture",
-      ar: "حوار سياساتي رفيع المستوى وحفل الافتتاح",
-      pt: "Diálogo político de alto nível e cerimónia de abertura",
+      en: "Honouring the Past, Inspiring the Future",
+      fr: "Honorer le passé, inspirer l'avenir",
+      ar: "تكريم الماضي، وإلهام المستقبل",
+      pt: "Honrando o passado, inspirando o futuro",
     },
     items: [
       {
@@ -1345,15 +1350,45 @@ const schedule = [
         },
       },
       {
-        time: "09:00 – 10:30",
+        time: "09:00 – 09:30",
         title: {
-          en: "Opening Ceremony",
+          en: "Opening Ceremony ",
           fr: "Cérémonie d’ouverture",
           ar: "حفل الافتتاح",
           pt: "Cerimónia de abertura",
         },
         desc: {
-          en: "Welcome Address by KCA University; remarks by the Government of Kenya; remarks by the Chairperson, AAU Board; goodwill messages from strategic partners.",
+          en: "Procession of University Leaders, African Union Anthem & AAU Anthem",
+          fr: "Procession des dirigeants universitaires, hymne de l'Union africaine et hymne de l'AAU",
+          ar: "行程 للقادة الجامعيين، والهوية الأفريقية والهوية AAU",
+          pt: "Processão dos Líderes Universitários, Hino da União Africana e Hino da AAU",
+        },
+      },
+      {
+        time: "09:30 – 10:00",
+        title: {
+          en: "Welcome Adresses",
+          fr: "Cérémonie d’ouverture",
+          ar: "حفل الافتتاح",
+          pt: "Cerimónia de abertura",
+        },
+        desc: {
+          en: "Welcome Address by KCA University. Address by AAU President & Secretary-General",
+          fr: "Mot d’accueil de KCA University; interventions du gouvernement du Kenya; remarques du président du Conseil de l’AAU; messages de bonne volonté des partenaires stratégiques.",
+          ar: "كلمة ترحيبية من جامعة KCA، ومداخلات من حكومة كينيا ورئيس مجلس AAU ورسائل شركاء استراتيجيين.",
+          pt: "Mensagem de boas-vindas da KCA University; intervenções do Governo do Quénia; observações do Presidente do Conselho da AAU; mensagens de parceiros estratégicos.",
+        },
+      },
+      {
+        time: "10:00 – 10:30",
+        title: {
+          en: "Remarks",
+          fr: "Cérémonie d’ouverture",
+          ar: "حفل الافتتاح",
+          pt: "Cerimónia de abertura",
+        },
+        desc: {
+          en: "Remarks from African Union & Kenya Government",
           fr: "Mot d’accueil de KCA University; interventions du gouvernement du Kenya; remarques du président du Conseil de l’AAU; messages de bonne volonté des partenaires stratégiques.",
           ar: "كلمة ترحيبية من جامعة KCA، ومداخلات من حكومة كينيا ورئيس مجلس AAU ورسائل شركاء استراتيجيين.",
           pt: "Mensagem de boas-vindas da KCA University; intervenções do Governo do Quénia; observações do Presidente do Conselho da AAU; mensagens de parceiros estratégicos.",
@@ -1362,28 +1397,31 @@ const schedule = [
       {
         time: "10:30 – 11:00",
         title: {
-          en: "Coffee Break",
+          en: "Official Opening by Head of State of Kenya",
+          fr: "Ouverture officielle par le Chef de l'État du Kenya",
+          ar: "الافتتاح الرسمي من قبل رئيس دولة كينيا",
+          pt: "Abertura oficial pelo Chefe de Estado do Quénia",
+        },
+      },
+      {
+        time: "11:00 – 11:30",
+        title: {
+          en: "Tea Break",
           fr: "Pause-café",
           ar: "استراحة قهوة",
           pt: "Pausa para café",
         },
-        desc: {
-          en: "Networking break.",
-          fr: "Pause de réseautage.",
-          ar: "استراحة للتشبيك.",
-          pt: "Pausa para networking.",
-        },
       },
       {
-        time: "11:00 – 12:00",
+        time: "11:30 – 12:00",
         title: {
-          en: "Diamond Jubilee Moment",
+          en: "Diamond Jubilee Keynote",
           fr: "Moment du jubilé de diamant",
           ar: "لحظة اليوبيل الماسي",
           pt: "Momento do jubileu de diamante",
         },
         desc: {
-          en: "Keynote: Celebrating 60 years of the Association of African Universities and repositioning African universities for the next 60 years.",
+          en: "Sixty Years of African Higher Education - Achievements, Lessons and Future Possibilities - Delivered by a globally respected higher education leader",
           fr: "Discours principal : célébrer 60 ans de l’Association des Universités Africaines et repositionner les universités africaines pour les 60 prochaines années.",
           ar: "الكلمة الرئيسية: الاحتفاء بستين عامًا لاتحاد الجامعات الأفريقية وإعادة تموضع الجامعات الأفريقية للستين سنة القادمة.",
           pt: "Discurso principal: celebrar 60 anos da Association of African Universities e reposicionar as universidades africanas para os próximos 60 anos.",
@@ -1392,16 +1430,24 @@ const schedule = [
       {
         time: "12:00 – 13:00",
         title: {
-          en: "Presidential Plenary: Institutional Resilience & Governance",
-          fr: "Plénière présidentielle : résilience institutionnelle et gouvernance",
-          ar: "الجلسة الرئاسية: المرونة المؤسسية والحوكمة",
-          pt: "Plenária presidencial: resiliência institucional e governação",
+          en: "Launches",
+          fr: "Lancements",
+          ar: "الإطلاقات",
+          pt: "Lançamentos",
         },
         desc: {
-          en: "Panel with university leaders, higher education policy experts, and government representatives.",
-          fr: "Panel avec des dirigeants universitaires, experts des politiques d’enseignement supérieur et représentants gouvernementaux.",
-          ar: "حلقة نقاش تضم قادة جامعات وخبراء سياسات التعليم العالي وممثلين حكوميين.",
-          pt: "Painel com líderes universitários, especialistas em políticas do ensino superior e representantes governamentais.",
+          en: `AAU Diamond Jubilee Publication - "60 Years of Transforming African Higher Education"
+          <ul><li>	AAU Legacy Fund</li>
+          <li>AAU Hall of Fame</li></ul>`,
+          fr: `Publication du jubilé de diamant de l’AAU - « 60 ans de transformation de l’enseignement supérieur africain »
+          <ul><li>	Fonds du patrimoine de l’AAU</li>
+          <li>Hall of Fame de l’AAU</li></ul>`,
+          ar: `نشر اليوبيل الماسي للاتحاد الأفريقي للجامعات - "60 عامًا من تحويل التعليم العالي الأفريقي"
+          <ul><li>	صندوق إرث الاتحاد الأفريقي للجامعات</li>
+          <li>قاعة الشهرة للاتحاد الأفريقي للجامعات</li></ul>`,
+          pt: `Publicação do Jubileu de Diamante da AAU - "60 Anos de Transformação da Educação Superior Africana"
+          <ul><li>	Fundo do Legado da AAU</li>
+          <li>Salão da Fama da AAU</li></ul>`,
         },
       },
       {
@@ -1415,24 +1461,65 @@ const schedule = [
         },
       },
       {
-        time: "14:00 – 15:15",
+        time: "14:00 – 14:30",
         title: {
-          en: "Leadership Plenary: Institutional Autonomy & Ethical Leadership",
-          fr: "Plénière de leadership : autonomie institutionnelle et leadership éthique",
-          ar: "الجلسة القيادية: الاستقلالية المؤسسية والقيادة الأخلاقية",
-          pt: "Plenária de liderança: autonomia institucional e liderança ética",
-        },
-        desc: {
-          en: "Focused discussion on autonomy, policy, and ethical leadership.",
-          fr: "Discussion ciblée sur l’autonomie, les politiques et le leadership éthique.",
-          ar: "نقاش مركز حول الاستقلالية والسياسات والقيادة الأخلاقية.",
-          pt: "Discussão focada em autonomia, política e liderança ética.",
+          en: "Goodwill Messages",
+          fr: "Messages de bonne volonté",
+          ar: "رسائل حسن النية",
+          pt: "Mensagens de boa vontade",
         },
       },
       {
-        time: "15:15 – 15:45",
+        time: "14:30 – 16:30",
         title: {
-          en: "Coffee Break",
+          en: "Presidential Higher Education Summit ",
+          fr: "Sommet présidentiel sur l’enseignement supérieur",
+          ar: "قمة التعليم العالي الرئاسية",
+          pt: "Cimeira Presidencial do Ensino Superior",
+        },
+        desc: {
+          en: `Theme: "Universities as Strategic Assets for Africa's Transformation"
+          <br>
+          Participants:
+          <ul><li>	Heads of State / Presidents </li>
+          <li>	Prime Ministers </li>
+              <li>	Ministers of Education </li>
+              <li>	Development Bank Presidents </li>
+              <br>
+              Expected Outcome: Nairobi Presidential Declaration`,
+          fr: `Thème : « Les universités en tant qu’actifs stratégiques pour la transformation de l’Afrique »
+          <br>
+          Participants :
+          <ul><li>	Chefs d’État / Présidents </li>
+          <li>	Premiers ministres </li>
+              <li>	Ministres de l’éducation </li>
+              <li>	Présidents de banques de développement </li>
+              <br>
+              Résultat attendu : Déclaration présidentielle de Nairobi`,
+          ar: `ال موضوع: "الجامعات كأصول استراتيجية لتحول أفريقيا"
+          <br>
+          المشاركين:
+          <ul><li>	رؤساء الدول / الرؤساء </li>
+          <li>	 الوزراء </li>
+              <li>	 الوزراء التعليم </li>
+              <li>	 رؤساء البنوك التنمية </li>
+              <br>
+              النتيجة المتوقعة: بيان الرئيس ناIROBI`,
+          pt: `Tema: "Universidades como Ativos Estratégicos para a Transformação da África"
+          <br>
+          Participantes:
+          <ul><li>	Líderes de Estado / Presidentes </li>
+          <li>	Primeiros-Ministros </li>
+              <li>	Ministros da Educação </li>
+              <li>	Presidentes de Bancos de Desenvolvimento </li>
+              <br>
+              Resultado Esperado: Declaração Presidencial de Nairóbi`,
+        },
+      },
+      {
+        time: "16:30 – 17:00",
+        title: {
+          en: "xxxxxx",
           fr: "Pause-café",
           ar: "استراحة قهوة",
           pt: "Pausa para café",
@@ -1445,48 +1532,38 @@ const schedule = [
         },
       },
       {
-        time: "15:45 – 17:00",
+        time: "Evening",
         title: {
-          en: "Strategic Plenary: Resilient Financing Models for African Universities",
-          fr: "Plénière stratégique : modèles de financement résilients",
-          ar: "الجلسة الاستراتيجية: نماذج التمويل المرنة للجامعات الأفريقية",
-          pt: "Plenária estratégica: modelos de financiamento resilientes",
+          en: "AAU Diamond Jubilee Gala Dinner – Awards & Corporate Recognition",
+          fr: "Dîner de gala du jubilé de diamant de l’AAU – Remise de prix et reconnaissance des partenaires",
+          ar: "حفل عشاء اليوبيل الماسي للاتحاد الأفريقي للجامعات – الجوائز والتقدير للشركاء",
+          pt: `Jantar de gala pelo jubilé de diamante da AAU – Prémios e reconhecimento dos parceiros`,
         },
         desc: {
-          en: "Focus on government funding, industry partnerships, philanthropy, endowments, and entrepreneurial universities.",
-          fr: "Accent sur le financement public, les partenariats avec l’industrie, la philanthropie, les dotations et les universités entrepreneuriales.",
-          ar: "التركيز على التمويل الحكومي والشراكات مع الصناعة والعمل الخيري والأوقاف والجامعات الريادية.",
-          pt: "Foco em financiamento público, parcerias com a indústria, filantropia, fundos patrimoniais e universidades empreendedoras.",
-        },
-      },
-      {
-        time: "17:00 – 18:00",
-        title: {
-          en: "Opening of Innovation & Knowledge Expo",
-          fr: "Ouverture de l’expo innovation et savoir",
-          ar: "افتتاح معرض الابتكار والمعرفة",
-          pt: "Abertura da expo de inovação e conhecimento",
-        },
-        desc: {
-          en: "Showcasing digital learning platforms, university innovations, industry partnerships, and research commercialization.",
-          fr: "Présentation de plateformes numériques, d’innovations universitaires, de partenariats industriels et de valorisation de la recherche.",
-          ar: "عرض المنصات الرقمية والابتكارات الجامعية والشراكات الصناعية وتسويق نتائج البحث.",
-          pt: "Apresentação de plataformas digitais, inovações universitárias, parcerias com a indústria e comercialização da investigação.",
-        },
-      },
-      {
-        time: "18:30 – 20:00",
-        title: {
-          en: "Welcome Reception",
-          fr: "Réception de bienvenue",
-          ar: "حفل استقبال ترحيبي",
-          pt: "Receção de boas-vindas",
-        },
-        desc: {
-          en: "Evening reception for delegates and partners.",
-          fr: "Réception en soirée pour les délégués et partenaires.",
-          ar: "حفل مسائي للمشاركين والشركاء.",
-          pt: "Receção noturna para delegados e parceiros.",
+          en: `Featuring:<br>
+        <ul><li>Lifetime Achievement Awards </li>
+        <li>Distinguished University Awards </li>
+        <li>Corporate Partner Recognition </li>
+        </ul>
+        This is a premier sponsorship event.`,
+          fr: `Au programme :<br>
+        <ul><li>Prix d’excellence à vie </li>
+        <li>Prix des universités distinguées </li>
+        <li>Reconnaissance des partenaires corporatifs </li>
+        </ul>
+        Il s’agit d’un événement de parrainage de premier plan.`,
+          ar: `في البرنامج:<br>
+        <ul><li>جوائز الإنجاز مدى الحياة </li>
+        <li>جوائز الجامعات المتميزة </li>
+        <li>تقدير الشركاء المؤسسيين </li>
+        </ul>
+        هذا حدث رعاية رائد.`,
+          pt: `No programa:<br>
+        <ul><li>Prémios de Realização ao Longo da Vida </li>
+        <li>Prémios de Universidades Distintas </li>
+        <li>Reconhecimento de Parceiros Corporativos </li>
+        </ul>
+        Este é um evento de patrocínio de destaque.`,
         },
       },
     ],
@@ -1495,35 +1572,59 @@ const schedule = [
     key: "day2",
     dayLabel: { en: "Day 2", fr: "Jour 2", ar: "اليوم 2", pt: "Dia 2" },
     title: {
-      en: "Relevance",
-      fr: "Pertinence",
-      ar: "الملاءمة",
-      pt: "Relevância",
+      en: "",
+      fr: "",
+      ar: "",
+      pt: "",
     },
     subtitle: {
-      en: "Academic Sessions & Communities of Practice",
-      fr: "Sessions académiques et communautés de pratique",
-      ar: "الجلسات الأكاديمية ومجتمعات الممارسة",
-      pt: "Sessões académicas e comunidades de prática",
+      en: "Financing and Building the Future African University",
+      fr: "Financer et construire l’université africaine du futur",
+      ar: "تمويل وبناء جامعة أفريقيا المستقبلية",
+      pt: "Financiamento e Construção da Universidade Africana do Futuro",
     },
     items: [
       {
-        time: "08:30 – 10:00",
+        time: "09:00 – 10:15",
         title: {
-          en: "Morning Parallel Academic Sessions",
-          fr: "Sessions académiques parallèles du matin",
-          ar: "الجلسات الأكاديمية المتوازية صباحًا",
-          pt: "Sessões académicas paralelas da manhã",
+          en: `Plenary: The Future African University 2040`,
+          fr: `Plénière : L’université africaine du futur 2040`,
+          ar: `الجلسة العامة: جامعة أفريقيا المستقبلية 2040`,
+          pt: `Plenária: A Universidade Africana do Futuro 2040`,
         },
         desc: {
-          en: "Tracks include Curriculum & Skills for the Future; Research & Industry Linkages; Digital Infrastructure & Transformation; Quality Assurance & Accreditation; Internationalisation & Diaspora Engagement.",
-          fr: "Les pistes incluent le curriculum et les compétences d’avenir; la recherche et les liens avec l’industrie; l’infrastructure numérique; l’assurance qualité; l’internationalisation et la diaspora.",
-          ar: "تشمل المسارات: المناهج ومهارات المستقبل؛ البحث والارتباط بالصناعة؛ البنية الرقمية؛ ضمان الجودة؛ والتدويل وإشراك الشتات.",
-          pt: "As trilhas incluem currículo e competências do futuro; investigação e ligações com a indústria; infraestrutura digital; garantia da qualidade; internacionalização e diáspora.",
+          en: `Panel:<br>
+          <ul><li>World Bank</li>
+          <li>AfDB </li>
+          <li>Mastercard Foundation</li>
+          <li>Microsoft</li>
+          <li>Google</li>
+          <li>University Leaders</li></ul>`,
+          fr: `Panel :<br>
+          <ul><li>Banque mondiale</li>
+          <li>BAD </li>
+          <li>Fondation Mastercard</li>
+          <li>Microsoft</li>
+          <li>Google</li>
+          <li>Dirigeants universitaires</li></ul>`,
+          ar: `لوحة:<br>
+          <ul><li>البنك العالمي</li>
+          <li>ADB </li>
+          <li>مؤسسة Mastercard</li>
+          <li>Microsoft</li>
+          <li>Google</li>
+          <li>قادة الجامعات</li></ul>`,
+          pt: `Panel :<br>
+          <ul><li>Banco Mundial</li>
+          <li>BAD </li>
+          <li>Fundaçao Mastercard</li>
+          <li>Microsoft</li>
+          <li>Google</li>
+          <li>Líderes Universitários</li></ul>`,
         },
       },
       {
-        time: "10:00 – 10:30",
+        time: "10:15 – 10:45",
         title: {
           en: "Coffee Break",
           fr: "Pause-café",
@@ -1538,33 +1639,65 @@ const schedule = [
         },
       },
       {
-        time: "10:30 – 12:00",
+        time: "10:45 – 12:00",
         title: {
-          en: "Second Parallel Track Block",
-          fr: "Deuxième bloc de pistes parallèles",
-          ar: "الكتلة الثانية من المسارات المتوازية",
-          pt: "Segundo bloco de trilhas paralelas",
+          en: "High-Level Investment Forum",
+          fr: "Forum d’investissement de haut niveau",
+          ar: "المنتدى الاستثماري عالي المستوى",
+          pt: "Fórum de Investimento de Alto Nível",
         },
         desc: {
-          en: "Climate Leadership & Inclusive Development; Universities as Catalysts for Peace & Social Justice; Artificial Intelligence & Data Governance; Open Science & Research Integrity; Student Wellbeing & Support Systems.",
-          fr: "Leadership climatique et développement inclusif; universités comme catalyseurs de paix; intelligence artificielle et gouvernance des données; science ouverte; bien-être étudiant.",
-          ar: "القيادة المناخية والتنمية الشاملة؛ الجامعات كعوامل للسلام؛ الذكاء الاصطناعي وحوكمة البيانات؛ العلم المفتوح؛ رفاه الطلبة.",
-          pt: "Liderança climática e desenvolvimento inclusivo; universidades como catalisadores de paz; inteligência artificial e governação de dados; ciência aberta; bem-estar estudantil.",
+          en: `Focus:<br>
+          <ul><li>University Financing</li>
+          <li>Research Financing</li>
+          <li>Digital Infrastructure</li>
+          <li>Skills Development</li></ul>`,
+          fr: `Focus :<br>
+          <ul><li>Financement universitaire</li>
+          <li>Financement de la recherche</li>
+          <li>Infrastructure numérique</li>
+          <li>Développement des compétences</li></ul>`,
+          ar: `التركيز:<br>
+          <ul><li>تمويل الجامعات</li>
+          <li>تمويل البحث العلمي</li>
+          <li>البنية التحتية الرقمية</li>
+          <li>تطوير المهارات</li></ul>`,
+          pt: `Foco:<br>
+          <ul><li>Financiamento universitário</li>
+          <li>Financiamento da pesquisa</li>
+          <li>Infraestrutura digital</li>
+          <li>Desenvolvimento de competências</li></ul>`,
         },
       },
       {
         time: "12:00 – 13:00",
         title: {
-          en: "Finals of Pre-Conference Activities",
-          fr: "Finales des activités pré-conférence",
-          ar: "نهائيات الأنشطة السابقة للمؤتمر",
-          pt: "Finais das atividades pré-conferência",
+          en: "Sponsor Roundtables - Parallel Sessions",
+          fr: "Tables rondes des sponsors - Sessions parallèles",
+          ar: "جولات الداعمين - الجلسات المتوازية",
+          pt: "Mesas-redondas dos patrocinadores - Sessões paralelas",
         },
         desc: {
-          en: "African Universities Debate Championship; Pan-African Student Innovation Challenge; Research Impact Pitch Competition.",
-          fr: "Championnat de débat des universités africaines; défi panafricain d’innovation étudiante; concours de pitch sur l’impact de la recherche.",
-          ar: "بطولة مناظرات الجامعات الأفريقية؛ تحدي الابتكار الطلابي الأفريقي؛ مسابقة عرض أثر البحث.",
-          pt: "Campeonato de debate das universidades africanas; desafio pan-africano de inovação estudantil; competição de pitch de impacto da investigação.",
+          en: `<ul><li>Roundtable 1 - Future Skills and Employability</li>
+              <li>Roundtable 2 - Artificial Intelligence and Digital Universities</li>
+              <li>Roundtable 3 - Research Commercialization</li>
+              <li>Roundtable 4 - Climate Leadership and Green Universities</li>
+              <li>Roundtable 5 - University Financing Models</li></ul>`,
+          fr: `<ul><li>Table ronde 1 - Compétences futures et employabilité</li>
+              <li>Table ronde 2 - Intelligence artificielle et universités numériques</li>
+              <li>Table ronde 3 - Commercialisation de la recherche</li>
+              <li>Table ronde 4 - Leadership climatique et universités vertes</li>
+              <li>Table ronde 5 - Modèles de financement universitaire</li></ul>`,
+          ar: `<ul><li>الجولة الأولى - المهارات المستقبلية والقابلية للتوظيف</li>
+              <li>الجولة الثانية - الذكاء الاصطناعي والجامعات الرقمية</li>
+              <li>الجولة الثالثة - تجارة البحث</li>
+              <li>الجولة الرابعة - القيادة المناخية والجامعات الخضراء</li>
+              <li>الجولة الخامسة - نماذج تمويل الجامعات</li></ul>`,
+          pt: `<ul><li>Mesa redonda 1 - Habilidades futuras e empregabilidade</li>
+              <li>Mesa redonda 2 - Inteligência artificial e universidades digitais</li>
+              <li>Mesa redonda 3 - Comercialização da pesquisa</li>
+              <li>Mesa redonda 4 - Liderança climática e universidades verdes</li>
+              <li>Mesa redonda 5 - Modelos de financiamento universitário</li></ul>`,
         },
       },
       {
@@ -1578,33 +1711,84 @@ const schedule = [
         },
       },
       {
-        time: "14:00 – 17:30",
+        time: "14:00 – 15:30",
         title: {
-          en: "Communities of Practice Meetings",
-          fr: "Rencontres des communautés de pratique",
-          ar: "اجتماعات مجتمعات الممارسة",
-          pt: "Reuniões das comunidades de prática",
+          en: "Sponsor Roundtables - Parallel Sessions (continuation)",
+          fr: "Tables rondes des sponsors - Sessions parallèles (suite)",
+          ar: "جولات الداعمين - الجلسات المتوازية (المتابعة)",
+          pt: "Mesas-redondas dos patrocinadores - Sessões paralelas (continuação)",
         },
         desc: {
-          en: "Parallel half-day meetings for bursars, librarians, registrars, quality assurance directors, ICT leaders, research leaders, student affairs and partnerships offices.",
-          fr: "Rencontres parallèles pour les intendants, bibliothécaires, registraires, directeurs qualité, responsables TIC, recherche, affaires étudiantes et partenariats.",
-          ar: "اجتماعات متوازية لنظار المال والمكتبات والمسجلين ومديري الجودة وقادة تكنولوجيا المعلومات والبحث وشؤون الطلبة والشراكات.",
-          pt: "Reuniões paralelas para bursars, bibliotecários, registrars, diretores de qualidade, líderes TIC, investigação, assuntos estudantis e parcerias.",
+          en: `<ul><li>Roundtable 1 - Future Skills and Employability</li>
+              <li>Roundtable 2 - Artificial Intelligence and Digital Universities</li>
+              <li>Roundtable 3 - Research Commercialization</li>
+              <li>Roundtable 4 - Climate Leadership and Green Universities</li>
+              <li>Roundtable 5 - University Financing Models</li></ul>`,
+          fr: `<ul><li>Table ronde 1 - Compétences futures et employabilité</li>
+              <li>Table ronde 2 - Intelligence artificielle et universités numériques</li>
+              <li>Table ronde 3 - Commercialisation de la recherche</li>
+              <li>Table ronde 4 - Leadership climatique et universités vertes</li>
+              <li>Table ronde 5 - Modèles de financement universitaire</li></ul>`,
+          ar: `<ul><li>الجولة الأولى - المهارات المستقبلية والقابلية للتوظيف</li>
+              <li>الجولة الثانية - الذكاء الاصطناعي والجامعات الرقمية</li>
+              <li>الجولة الثالثة - تجارة البحث</li>
+              <li>الجولة الرابعة - القيادة المناخية والجامعات الخضراء</li>
+              <li>الجولة الخامسة - نماذج تمويل الجامعات</li></ul>`,
+          pt: `<ul><li>Mesa redonda 1 - Habilidades futuras e empregabilidade</li>
+              <li>Mesa redonda 2 - Inteligência artificial e universidades digitais</li>
+              <li>Mesa redonda 3 - Comercialização da pesquisa</li>
+              <li>Mesa redonda 4 - Liderança climática e universidades verdes</li>
+              <li>Mesa redonda 5 - Modelos de financiamento universitário</li></ul>`,
+        },
+      },
+      {
+        time: "15:30 – 17:00",
+        title: {
+          en: "Partnership Marketplace – A structured B2B matchmaking platform",
+          fr: "Marché des partenariats – Une plateforme de mise en relation B2B structurée",
+          ar: "سوق الشراكات – منصة مطورة لربط الشركات",
+          pt: "Mercado de Parcerias – Uma plataforma estruturada de correspondência B2B",
+        },
+        desc: {
+          en: `Meetings between:<ul>
+          <li>Universities </li>
+          <li>Industry </li>
+          <li>Foundations </li>
+          <li>Governments </li>
+          <li>International partners </li></ul>`,
+          fr: `Rencontres entre :<ul>
+          <li>Universités </li>
+          <li>Industrie </li>
+          <li>Fondations </li>
+          <li>Gouvernements </li>
+          <li>Partenaires internationaux </li></ul>`,
+          ar: `الاجتماعات بين:<ul>
+          <li>الجامعات </li>
+          <li>الصناعة </li>
+          <li>المؤسسات </li>
+          <li>الحكومات </li>
+          <li>الشركاء الدوليون </li></ul>`,
+          pt: `Reuniões entre:<ul>
+          <li>Universidades </li>
+          <li>Indústria </li>
+          <li>Fundações </li>
+          <li>Governo </li>
+          <li>Parceiros internacionais </li></ul>`,
         },
       },
       {
         time: "Evening",
         title: {
-          en: "Exhibition Visits",
-          fr: "Visites de l’exposition",
-          ar: "زيارات المعرض",
-          pt: "Visitas à exposição",
+          en: "Sponsors & Partners Reception",
+          fr: "Réception des sponsors et partenaires",
+          ar: "حفل استقبال الرعاة والشركاء",
+          pt: "Recepção dos Patrocinadores e Parceiros",
         },
         desc: {
-          en: "Evening expo visits and networking.",
-          fr: "Visites de l’expo et réseautage en soirée.",
-          ar: "زيارات مسائية للمعرض والتشبيك.",
-          pt: "Visitas à expo e networking ao fim da tarde.",
+          en: "Exclusive networking event",
+          fr: "Événement de réseautage exclusif",
+          ar: "حدث تشبيك حصرى",
+          pt: "Evento de networking exclusivo",
         },
       },
     ],
